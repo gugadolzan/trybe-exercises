@@ -7,6 +7,10 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // or just
 // console.log(numbers);
+// ==============================================
+
+
+
 
 // ================> exercise 2 <================
 // let sum = 0;
@@ -16,8 +20,27 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // };
 
 // console.log(sum);
+// ==============================================
+
+
+
 
 // ================> exercise 3 <================
+// let sum = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   sum = sum + numbers[index];
+// };
+
+// let average = sum / numbers.length;
+
+// console.log(average);
+// ==============================================
+
+
+
+
+// ================> exercise 4 <================
 let sum = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
@@ -26,4 +49,8 @@ for (let index = 0; index < numbers.length; index += 1) {
 
 let average = sum / numbers.length;
 
-console.log(average);
+if (average > 20) {
+  console.log('result higher than 20');
+} else {
+  console.log('result lower than 20');
+};
