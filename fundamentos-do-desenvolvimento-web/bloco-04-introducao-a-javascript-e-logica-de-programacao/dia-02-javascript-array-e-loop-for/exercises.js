@@ -55,12 +55,31 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 // ================> exercise 5 <================
-let higher = 0;
+// let higher = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] > higher) {
+//     higher = numbers[index];
+//   };
+// };
+
+// console.log(higher);
+// ==============================================
+
+
+
+
+// ================> exercise 6 <================
+let oddNumbers = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] > higher) {
-    higher = numbers[index];
+  if (numbers[index] % 2 !== 0) {
+    oddNumbers += 1;
   };
 };
 
-console.log(higher);
+if (oddNumbers === 0) {
+  console.log('there are not odd numbers');
+} else {
+  console.log('there are ' + oddNumbers + ' odd numbers');
+};
