@@ -70,16 +70,31 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 // ================> exercise 6 <================
-let oddNumbers = 0;
+// let oddNumbers = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] % 2 !== 0) {
+//     oddNumbers += 1;
+//   };
+// };
+
+// if (oddNumbers === 0) {
+//   console.log('there are not odd numbers');
+// } else {
+//   console.log('there are ' + oddNumbers + ' odd numbers');
+// };
+// ==============================================
+
+
+
+
+// ================> exercise 7 <================
+let lower = numbers[0];
 
 for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] % 2 !== 0) {
-    oddNumbers += 1;
+  if (numbers[index] < lower) {
+    lower = numbers[index];
   };
 };
 
-if (oddNumbers === 0) {
-  console.log('there are not odd numbers');
-} else {
-  console.log('there are ' + oddNumbers + ' odd numbers');
-};
+console.log(lower);
