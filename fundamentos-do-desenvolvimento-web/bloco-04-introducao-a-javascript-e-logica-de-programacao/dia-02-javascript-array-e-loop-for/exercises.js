@@ -89,12 +89,25 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 // ================> exercise 7 <================
-let lower = numbers[0];
+// let lower = numbers[0];
 
-for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] < lower) {
-    lower = numbers[index];
-  };
-};
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] < lower) {
+//     lower = numbers[index];
+//   };
+// };
 
-console.log(lower);
+// console.log(lower);
+// ==============================================
+
+
+
+
+// ================> exercise 8 <================
+let array = []
+
+for (let index = 0; index < 25; index += 1) {
+  array.push(index + 1);
+}
+
+console.log(array);
