@@ -87,6 +87,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     setUpperCase();
 
     function showParagraphs() {
+      let paragraph = document.getElementsByTagName('p');
       for (let index = 0; index < paragraph.length; index += 1) {
         console.log(paragraph[index].innerText);
       }
