@@ -65,15 +65,12 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
     document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 
-    let paragraph;
-    paragraph = document.getElementsByTagName('p')[0];
-    paragraph.innerText = paragraph.innerText.toUpperCase();
+    let length = document.getElementsByTagName('p').length;
+    for (let index = 0; index < length; index += 1) {
+      let paragraph = document.getElementsByTagName('p')[index];
+      paragraph.innerText = paragraph.innerText.toUpperCase();
+    }
 
-    paragraph = document.getElementsByTagName('p')[1];
-    paragraph.innerText = paragraph.innerText.toUpperCase();
-
-    paragraph = document.getElementsByTagName('p')[2];
-    paragraph.innerText = paragraph.innerText.toUpperCase();
 
   </script>
 </body>
