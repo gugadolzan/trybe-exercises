@@ -33,7 +33,7 @@ São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento 
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions]()_
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)_
 
 ##### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
