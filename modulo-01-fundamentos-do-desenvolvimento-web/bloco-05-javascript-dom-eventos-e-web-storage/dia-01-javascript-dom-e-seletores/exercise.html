@@ -59,7 +59,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
 
     function changeText() {
-      document.getElementsByTagName('p')[1].innerText = 'Em 2 anos me vejo formado em desenvolvimento web pela Trybe e trabalhando em uma empresa que eu admire (na XP Investimentos quem sabe).';
+      document.getElementsByTagName('p')[1].innerHTML = 'Em 2 anos me vejo formado em desenvolvimento web pela Trybe e trabalhando em uma empresa que eu admire (na XP Investimentos quem sabe).';
     }
     changeText();
 
@@ -74,14 +74,14 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     changeColorToWhite();
 
     function correctTitle() {
-      document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+      document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaScript';
     }
     correctTitle();
 
     function setUpperCase() {
       let paragraph = document.getElementsByTagName('p');
       for (let index = 0; index < paragraph.length; index += 1) {
-        paragraph[index].innerText = paragraph[index].innerText.toUpperCase();
+        paragraph[index].innerHTML = paragraph[index].innerHTML.toUpperCase();
       }
     }
     setUpperCase();
@@ -89,7 +89,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     function showParagraphs() {
       let paragraph = document.getElementsByTagName('p');
       for (let index = 0; index < paragraph.length; index += 1) {
-        console.log(paragraph[index].innerText);
+        console.log(paragraph[index].innerHTML);
       }
     }
     showParagraphs();
