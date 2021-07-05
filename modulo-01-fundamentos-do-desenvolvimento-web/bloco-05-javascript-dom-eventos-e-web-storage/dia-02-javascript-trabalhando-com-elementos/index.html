@@ -73,6 +73,11 @@
     let centerContent = document.createElement('div');
     centerContent.className = 'center-content';
     document.querySelector('.main-content').appendChild(centerContent);
+
+    // 4. Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+    let text = document.createElement('p');
+    text.innerText = 'Lorem Ipsum';
+    document.querySelector('.center-content').appendChild(text);
   </script>
 </body>
 
