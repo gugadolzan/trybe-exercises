@@ -53,9 +53,9 @@ setDaysOfTheMonth();
 
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container".
 
-function createHolidayButton(string) {
+function createHolidayButton(buttonName) {
   let holidayButton = document.createElement('button');
-  holidayButton.innerText = string;
+  holidayButton.innerText = buttonName;
   holidayButton.setAttribute('id', 'btn-holiday');
   document.querySelector('.buttons-container').appendChild(holidayButton);
 }
@@ -67,9 +67,8 @@ createHolidayButton('Feriados');
 
 // É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)".
 
-let holidayDays = document.getElementsByClassName('holiday');
-
 function changeHolidaysBackgroundColor() {
+  let holidayDays = document.getElementsByClassName('holiday');
   for (let index = 0; index < holidayDays.length; index += 1) {
     if (holidayDays[index].style.backgroundColor !== 'white') {
       holidayDays[index].style.backgroundColor = 'white';
@@ -79,3 +78,19 @@ function changeHolidaysBackgroundColor() {
   }
 }
 document.getElementById('btn-holiday').addEventListener('click', changeHolidaysBackgroundColor);
+
+//Exercício 4:
+
+// Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+
+// Adicione a este botão o ID "btn-friday".
+
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container".
+
+function createFridayButton(buttonName) {
+  let fridayButton = document.createElement('button');
+  fridayButton.innerText = buttonName;
+  fridayButton.setAttribute('id', 'btn-friday');
+  document.querySelector('.buttons-container').appendChild(fridayButton);
+}
+createFridayButton('Sexta-feira');
