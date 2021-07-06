@@ -27,18 +27,36 @@ createDaysOfTheWeek();
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-function daysList() {
+function setDaysOfTheMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let day = document.createElement('li');
     day.innerText = dezDaysList[index];
     day.classList.add('day');
     document.getElementById('days').appendChild(day);
+
     if (dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
       day.classList.add('holiday');
     }
+
     if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25) {
       day.classList.add('friday');
     }
   }
 }
-daysList();
+setDaysOfTheMonth();
+
+// Exercício 2:
+
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+
+// Adicione a este botão a ID "btn-holiday".
+
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container".
+
+function createHolidayButton(string) {
+  let holidayButton = document.createElement('button');
+  holidayButton.innerText = string;
+  holidayButton.setAttribute('id', 'btn-holiday');
+  document.querySelector('.buttons-container').appendChild(holidayButton);
+}
+createHolidayButton('Feriados');
