@@ -174,7 +174,15 @@ addTask('Estudar!');
 
 // - O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
+function addTaskSubtitle(color) {
+  let taskSubtitle = document.createElement('div');
 
+  taskSubtitle.classList.add('task');
+  taskSubtitle.style.backgroundColor = color;
+
+  document.querySelector('.my-tasks').appendChild(taskSubtitle);
+}
+addTaskSubtitle('red');
 
 // Exercício 9:
 
