@@ -190,7 +190,18 @@ addTaskSubtitle('red');
 
 // - Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
 
+function taskDone() {
+  let task = document.querySelector('.task');
 
+  task.addEventListener('click', function (event) {
+    if (task.className === 'task') {
+      event.target.className = 'task selected'
+    } else {
+      event.target.className = 'task'
+    }
+  });
+}
+taskDone();
 
 // Exercício 10:
 
