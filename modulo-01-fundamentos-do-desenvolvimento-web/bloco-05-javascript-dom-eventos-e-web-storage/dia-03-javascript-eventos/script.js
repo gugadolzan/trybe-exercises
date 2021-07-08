@@ -195,9 +195,11 @@ function taskDone() {
 
   task.addEventListener('click', function (event) {
     if (task.className === 'task') {
-      event.target.className = 'task selected'
+      event.target.className = 'task selected';
+      event.target.style.backgroundColor = 'green';
     } else {
-      event.target.className = 'task'
+      event.target.className = 'task';
+      event.target.style.backgroundColor = 'red';
     }
   });
 }
