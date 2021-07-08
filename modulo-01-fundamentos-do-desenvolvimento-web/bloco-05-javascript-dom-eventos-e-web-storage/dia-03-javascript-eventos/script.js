@@ -211,7 +211,20 @@ taskDone();
 
 // - Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119).
 
+function changeDayColor() {
+  let days = document.getElementById('days');
+  let color = document.querySelector('.task').style.backgroundColor;
 
+
+  days.addEventListener('click', function (event) {
+    if (event.target.style.color !== color) {
+      event.target.style.color = color;
+    } else {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  })
+}
+changeDayColor();
 
 // Bônus:
 
