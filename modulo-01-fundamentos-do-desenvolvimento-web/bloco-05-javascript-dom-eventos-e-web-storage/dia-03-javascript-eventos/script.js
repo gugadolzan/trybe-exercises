@@ -215,7 +215,6 @@ function changeDayColor() {
   let days = document.getElementById('days');
   let color = document.querySelector('.task').style.backgroundColor;
 
-
   days.addEventListener('click', function (event) {
     if (event.target.style.color !== color) {
       event.target.style.color = color;
@@ -235,3 +234,24 @@ changeDayColor();
 // - Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 
 // - Dica - Propriedade: keyCode.
+
+function addAppointment() {
+  let input = document.getElementById('task-input');
+  let appointmentButton = document.getElementById('btn-add');
+  let appointmentList = document.querySelector('.input-container');
+
+  appointmentButton.addEventListener('click', function () {
+    if (!input.value) {
+      alert('ERRO: Insira ao menos 1 caractere');
+    } else {
+      let appointmentItem = document.createElement('li');
+
+      appointmentItem.innerText = input.value;
+      appointmentList.appendChild(appointmentItem);
+
+      input.value = '';
+    }
+  })
+};
+
+addAppointment();
