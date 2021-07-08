@@ -30,8 +30,10 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 function setDaysOfTheMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let day = document.createElement('li');
+
     day.innerText = dezDaysList[index];
     day.classList.add('day');
+
     document.getElementById('days').appendChild(day);
 
     if (dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
@@ -55,8 +57,10 @@ setDaysOfTheMonth();
 
 function createHolidayButton(buttonName) {
   let holidayButton = document.createElement('button');
+
   holidayButton.innerText = buttonName;
   holidayButton.setAttribute('id', 'btn-holiday');
+
   document.querySelector('.buttons-container').appendChild(holidayButton);
 }
 createHolidayButton('Feriados');
@@ -92,8 +96,10 @@ changeHolidaysBackgroundColor();
 
 function createFridayButton(buttonName) {
   let fridayButton = document.createElement('button');
+
   fridayButton.innerText = buttonName;
   fridayButton.setAttribute('id', 'btn-friday');
+
   document.querySelector('.buttons-container').appendChild(fridayButton);
 }
 createFridayButton('Sexta-feira');
@@ -151,7 +157,14 @@ zoomOut();
 
 // - O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
+function addTask(task) {
+  let taskItem = document.createElement('span');
 
+  taskItem.innerText = task;
+
+  document.querySelector('.my-tasks').appendChild(taskItem);
+}
+addTask('Estudar!');
 
 // Exercício 8:
 
