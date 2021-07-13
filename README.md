@@ -43,9 +43,9 @@ São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento 
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Projeto - Arte com Pixels](https://gugadolzan.github.io/projects/pixels-art/)_
 - [X] 5-6: _[Projeto - Lista de tarefas](https://gugadolzan.github.io/projects/todo-list/)_
-- [ ] 5-7: _[Projeto - Meme Generator]()_
+- [X] 5-7: _[Projeto - Meme Generator](https://gugadolzan.github.io/projects/meme-generator/)_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-7: _[Projeto - Carta Misteriosa](https://gugadolzan.github.io/projects/mistery-letter/)_
 
 ##### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
