@@ -28,3 +28,12 @@ function dateValidation() {
 }
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', dateValidation);
+
+const printForm = document.getElementById('print-form');
+submitButton.addEventListener('click', (event) => { // Not ok this function
+  event.preventDefault();
+  for (let index = 0; index < document.getElementsByTagName('input').length - 1; index += 1) {
+    printForm.innerHTML += document.getElementsByTagName('input')[index].value;
+    printForm.innerHTML += '<br>';
+  }
+});
