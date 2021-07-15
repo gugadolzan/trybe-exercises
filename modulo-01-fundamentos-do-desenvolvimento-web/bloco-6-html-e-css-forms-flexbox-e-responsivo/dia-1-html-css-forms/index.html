@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <form action="" method="get">
+  <form action="" method="get" id="form">
     <fieldset>
       <legend>Dados pessoais</legend>
       <label for="name">Nome</label>
@@ -53,7 +53,10 @@
     <input type="submit" value="Enviar Formulário" id="submit">
     <input type="reset" value="Limpar Formulário" id="reset">
   </form>
-  <div id="print-form"></div>
+  <hr>
+  <label for="print-form">Dados inseridos aparecerão abaixo</label>
+  <fieldset id="print-form">
+  </fieldset>
   <script src="script.js"></script>
 </body>
 
