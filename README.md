@@ -49,7 +49,7 @@ São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento 
 
 ##### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6-1: _HTML & CSS - Forms_
+- [X] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _CSS Flexbox - Parte 1_
 - [ ] 6-4: _CSS Flexbox - Parte 2_
