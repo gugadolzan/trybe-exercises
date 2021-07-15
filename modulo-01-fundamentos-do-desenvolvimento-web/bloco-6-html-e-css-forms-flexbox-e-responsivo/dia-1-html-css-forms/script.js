@@ -37,3 +37,8 @@ submitButton.addEventListener('click', (event) => { // Not ok this function
     printForm.innerHTML += '<br>';
   }
 });
+
+const resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', () => {
+  printForm.innerHTML = '';
+});
