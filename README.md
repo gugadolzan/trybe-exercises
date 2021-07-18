@@ -44,14 +44,14 @@ São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento 
 - [X] 5-5: _[Projeto - Arte com Pixels](https://gugadolzan.github.io/projects/pixels-art/)_
 - [X] 5-6: _[Projeto - Lista de tarefas](https://gugadolzan.github.io/projects/todo-list/)_
 - [X] 5-7: _[Projeto - Meme Generator](https://gugadolzan.github.io/projects/meme-generator/)_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://gugadolzan.github.io/projects/color-guess/)_
 - [X] 5-7: _[Projeto - Carta Misteriosa](https://gugadolzan.github.io/projects/mistery-letter/)_
 
 ##### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [X] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Parte 1_
+- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 6-3: _CSS Flexbox - Parte 1_
 - [ ] 6-4: _CSS Flexbox - Parte 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Trybewarts]()_
