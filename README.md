@@ -58,7 +58,7 @@ São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento 
 
 ##### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitários em JavaScript_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
