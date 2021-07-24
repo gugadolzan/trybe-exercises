@@ -22,3 +22,5 @@ const addNewKey = (obj, key, value) => obj[key] = value;
 addNewKey(lesson2, 'turno', 'manhã');
 
 const showKeys = (obj) => Object.keys(obj);
+
+const showLength = (obj) => Object.keys(obj).length;
