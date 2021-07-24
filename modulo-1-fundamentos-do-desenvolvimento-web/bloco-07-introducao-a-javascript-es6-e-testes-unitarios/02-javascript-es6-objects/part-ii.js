@@ -26,3 +26,5 @@ const showKeys = (obj) => Object.keys(obj);
 const showLength = (obj) => Object.keys(obj).length;
 
 const showValues = (obj) => Object.values(obj);
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
