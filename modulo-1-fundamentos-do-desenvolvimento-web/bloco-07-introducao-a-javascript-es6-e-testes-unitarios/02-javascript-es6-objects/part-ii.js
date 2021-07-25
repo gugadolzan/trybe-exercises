@@ -18,31 +18,35 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// Exercise 1
 const addNewKey = (obj, key, value) => obj[key] = value;
 addNewKey(lesson2, 'turno', 'manhã');
 
+// Exercise 2
 const showKeys = (obj) => Object.keys(obj);
 
+// Exercise 3
 const showLength = (obj) => Object.keys(obj).length;
 
+// Exercise 4
 const showValues = (obj) => Object.values(obj);
 
+// Exercise 5
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
+// Exercise 6
 const totalStudents = (obj) => {
   let totalStudents = 0;
   for (const value of Object.values(obj)) {
-    for (const key in value) {
-      if (key === 'numeroEstudantes') {
-        totalStudents += value[key];
-      }
-    }
+    totalStudents += value.numeroEstudantes;
   }
   return totalStudents;
 };
 
+// Exercise 7
 const getValueByNumber = (obj, keyIndex) => Object.values(obj)[keyIndex];
 
+// Exercise 8
 const verifyPair = (obj, key, value) => {
   const pairs = Object.entries(obj);
   for (const pair of pairs) {
@@ -52,3 +56,15 @@ const verifyPair = (obj, key, value) => {
   }
   return false;
 };
+
+// Bonus
+// Exercise 1
+const getNumberOfStudents = (obj, subject) => {
+  let numberOfStudents = 0;
+  for (const value of Object.values(obj)) {
+    if (value.materia === subject) {
+      numberOfStudents += value.numeroEstudantes;
+    }
+  }
+  return numberOfStudents;
+}
