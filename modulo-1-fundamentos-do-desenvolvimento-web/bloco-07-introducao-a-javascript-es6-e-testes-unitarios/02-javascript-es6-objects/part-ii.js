@@ -39,6 +39,16 @@ const totalStudents = (obj) => {
     }
   }
   return totalStudents;
-}
+};
 
 const getValueByNumber = (obj, keyIndex) => Object.values(obj)[keyIndex];
+
+const verifyPair = (obj, key, value) => {
+  const pairs = Object.entries(obj);
+  for (const pair of pairs) {
+    if (pair[0] === key && pair[1] === value) {
+      return true;
+    }
+  }
+  return false;
+};
