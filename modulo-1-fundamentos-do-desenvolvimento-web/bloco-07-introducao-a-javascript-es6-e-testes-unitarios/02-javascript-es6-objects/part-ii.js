@@ -68,3 +68,19 @@ const getNumberOfStudents = (obj, subject) => {
   }
   return numberOfStudents;
 }
+
+// Exercise 2
+const createReport = (obj, professor) => {
+  const report = {
+    professor: professor,
+  };
+  const lessons = [];
+  let numberOfStudents = 0;
+  for (const value of Object.values(obj)) {
+    if (value.professor === professor) {
+      lessons.push(value.materia);
+      numberOfStudents += value.numeroEstudantes;
+    }
+  }
+  return Object.assign(report, {aulas: lessons, estudantes: numberOfStudents});
+}
