@@ -40,4 +40,5 @@ const totalStudents = (obj) => {
   }
   return totalStudents;
 }
-console.log(totalStudents(allLessons));
+
+const getValueByNumber = (obj, keyIndex) => Object.values(obj)[keyIndex];
