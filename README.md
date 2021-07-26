@@ -195,17 +195,17 @@ _São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
 - [ ] **02**: Aggregation Framework - Part 2
 - [ ] **03**: [Projeto - Aggregations]()
 
-#### Bloco 26: Introdução ao desenvolvimento Web com NodeJS
+#### Bloco 26: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] **01**: Intro - NodeJS
+- [ ] **01**: Intro - Node.js
 - [ ] **01**: Node.js - Introdução
 - [ ] **02**: Node.js - Fluxo Assíncrono
-- [ ] **03**: Testes com NodeJS
+- [ ] **03**: Testes com Node.js
 - [ ] **04**: Express: HTTP com Node.js
 - [ ] **05**: Praticando Express
 - [ ] **06**: [Projeto - Talker Manager]()
 
-#### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
+#### Bloco 27: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
 - [ ] **01**: Introdução - Arquitetura de Software
 - [ ] **01**: Arquitetura de Software - Camada de Model
@@ -216,9 +216,9 @@ _São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
 
 #### Bloco 28: Autenticação e Upload de Arquivos
 
-- [ ] **01**: NodeJS - JWT - (JSON Web Token)
-- [ ] **02**: NodeJS - Upload de arquivos com `multer`
-- [ ] **03**: NodeJS - Testando APIs com Testes de Integração
+- [ ] **01**: Node.js - JWT - (JSON Web Token)
+- [ ] **02**: Node.js - Upload de arquivos com `multer`
+- [ ] **03**: Node.js - Testando APIs com Testes de Integração
 - [ ] **04**: [Projeto - Cookmaster]()
 
 #### Bloco 29: Deployment
