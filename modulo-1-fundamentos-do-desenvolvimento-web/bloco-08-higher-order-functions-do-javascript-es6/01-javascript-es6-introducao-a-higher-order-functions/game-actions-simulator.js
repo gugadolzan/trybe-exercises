@@ -20,6 +20,7 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
+// To generate a random number between two numbers: Math.floor(Math.random() * (maxNumber + 1 (to include maxNumber) - minNumber) + minNumber);
 const dragonDamage = (dragon) => Math.floor(Math.random() * (dragon.strength + 1 - 15) + 15);
 
 const warriorDamage = (warrior) => Math.floor(Math.random() * (warrior.strength * warrior.weaponDmg + 1 - warrior.strength) + warrior.strength);
