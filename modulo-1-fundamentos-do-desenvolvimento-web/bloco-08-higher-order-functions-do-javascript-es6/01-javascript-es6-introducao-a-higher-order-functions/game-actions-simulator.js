@@ -23,3 +23,5 @@ const battleMembers = { mage, warrior, dragon };
 const dragonDamage = (dragon) => Math.floor(Math.random() * (dragon.strength + 1 - 15) + 15);
 
 const warriorDamage = (warrior) => Math.floor(Math.random() * (warrior.strength * warrior.weaponDmg + 1 - warrior.strength) + warrior.strength);
+
+const mageDamage = (mage) => (mage.mana < 15) ? { damage: 'Não possui mana suficiente', manaSpent: 0 } : { damage: Math.floor(Math.random() * (mage.intelligence * 2 + 1 - mage.intelligence) + mage.intelligence), manaSpent: 15 };
