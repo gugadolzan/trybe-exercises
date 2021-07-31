@@ -1,5 +1,13 @@
 function createDaysOfTheWeek() {
-  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDays = [
+    'Domingo',
+    'Segunda',
+    'Terça',
+    'Quarta',
+    'Quinta',
+    'Sexta',
+    'Sábado',
+  ];
   const weekDaysList = document.querySelector('.week-days');
 
   for (let index = 0; index < weekDays.length; index += 1) {
@@ -8,8 +16,8 @@ function createDaysOfTheWeek() {
     dayListItem.innerHTML = days;
 
     weekDaysList.appendChild(dayListItem);
-  };
-};
+  }
+}
 
 createDaysOfTheWeek();
 
@@ -25,7 +33,10 @@ createDaysOfTheWeek();
 
 // - Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
 
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const dezDaysList = [
+  29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+];
 
 function setDaysOfTheMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
@@ -36,11 +47,20 @@ function setDaysOfTheMonth() {
 
     document.getElementById('days').appendChild(day);
 
-    if (dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
+    if (
+      dezDaysList[index] === 24 ||
+      dezDaysList[index] === 25 ||
+      dezDaysList[index] === 31
+    ) {
       day.classList.add('holiday');
     }
 
-    if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25) {
+    if (
+      dezDaysList[index] === 4 ||
+      dezDaysList[index] === 11 ||
+      dezDaysList[index] === 18 ||
+      dezDaysList[index] === 25
+    ) {
       day.classList.add('friday');
     }
   }
@@ -138,7 +158,7 @@ function zoomIn() {
 
   days.addEventListener('mouseover', function (event) {
     event.target.style.fontSize = '30px';
-  })
+  });
 }
 zoomIn();
 
@@ -147,7 +167,7 @@ function zoomOut() {
 
   days.addEventListener('mouseout', function (event) {
     event.target.style.fontSize = '20px';
-  })
+  });
 }
 zoomOut();
 
@@ -221,7 +241,7 @@ function changeDayColor() {
     } else {
       event.target.style.color = 'rgb(119,119,119)';
     }
-  })
+  });
 }
 changeDayColor();
 
@@ -251,7 +271,18 @@ function addAppointment() {
 
       input.value = '';
     }
-  })
-};
+  });
+
+  input.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13 && input.value.length > 0) {
+      let appointmentItem = document.createElement('li');
+
+      appointmentItem.innerText = input.value;
+      appointmentList.appendChild(appointmentItem);
+
+      input.value = '';
+    }
+  });
+}
 
 addAppointment();
