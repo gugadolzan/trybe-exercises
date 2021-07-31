@@ -32,5 +32,11 @@ const gameActions = {
     const warriorDamage = warriorAttack(warrior);
     dragon.healthPoints -= warriorDamage;
     warrior.damage = warriorDamage;
+  },
+  mageTurn: (mageAttack) => {
+    const mageStats = mageAttack(mage);
+    dragon.healthPoints -= mageStats.damage;
+    mage.damage = mageStats.damage;
+    mage.mana -= mageStats.manaSpent;
   }
 };
