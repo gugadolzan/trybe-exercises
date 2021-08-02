@@ -13,6 +13,7 @@ function flatten() {
   }, []);
 }
 
+// Alternative solution:
 // function flatten() {
 //   return arrays.reduce((acc, curr) => acc.concat(curr), []);
 // }
