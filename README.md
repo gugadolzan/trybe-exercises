@@ -1,12 +1,22 @@
-# Trybe
+# Trybe Exercises
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Gustavo Dolzan](https://www.linkedin.com/in/gustavo-dolzan/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+### :brazil:
 
-_"A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes. Com o Modelo de Sucesso Compartilhado, quem estuda na Trybe tem a opção de pagar apenas quando já estiver trabalhando._
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Gustavo Dolzan](https://www.linkedin.com/in/gustavo-dolzan/) enquanto estudava na [Trybe](https://www.betrybe.com/).
 
-_São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, Front-end, Back-end, ciência da computação, metodologias ágeis e habilidades comportamentais."_
+> A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes. Com o Modelo de Sucesso Compartilhado, quem estuda na Trybe tem a opção de pagar apenas quando já estiver trabalhando.
+>
+> São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento Front-end, desenvolvimento Back-end, ciência da computação, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+### :us:
+
+This repository contains all the exercises developed by [Gustavo Dolzan](https://www.linkedin.com/in/gustavo-dolzan/) during [Trybe](https://www.betrybe.com/)’s Web Development course.
+
+> Trybe is a web development school that has a genuine commitment to the professional success of its students. With the Income Share Agreement, those who study at Trybe have the option of paying only when they are already working.
+>
+> There are more than 1500 hours of training that covers fundamentals of web development, Front-end, Back-end, computer science, agile methodologies and soft skills.
+
+## Fundamentos do Desenvolvimento Web
 
 #### Bloco 01: Unix & Bash
 
@@ -91,7 +101,7 @@ _São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
 - [ ] **03**: Jest - Simulando comportamentos
 - [ ] **04**: [Projeto - Jest Assíncrono e Mocking]()
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end
 
 #### Bloco 11: Introdução à React
 
@@ -149,7 +159,7 @@ _São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
 
 - [ ] **01**: [Projeto - App de Receitas]()
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end
 
 #### Bloco 20: Introdução à SQL
 
@@ -247,7 +257,7 @@ _São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
 
 - [ ] **01**: [Projeto - Trybeer]()
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação
 
 #### Bloco 33: Arquitetura de Computadores e Redes
 
