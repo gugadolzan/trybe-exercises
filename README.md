@@ -86,7 +86,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **03**: JavaScript ES6 - Higher Order Functions - map e filter
 - [X] **04**: JavaScript ES6 - Higher Order Functions - reduce
 - [X] **05**: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [ ] **06**: [Projeto - Zoo functions]()
+- [X] **06**: [Projeto - Zoo functions](https://github.com/tryber/sd-014-a-project-zoo-functions/pull/19)
 
 #### Bloco 09: JavaScript Assíncrono e Promises
 
