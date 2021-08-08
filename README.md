@@ -38,7 +38,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **02**: HTML & CSS - Primeiros passos em CSS
 - [X] **03**: HTML & CSS - Seletores e posicionamento
 - [X] **04**: HTML Semântico
-- [X] **05**: [Projeto - Lessons Learned](https://gugadolzan.github.io/projects/lessons-learned/)
+- [X] **05**: [Projeto - Lessons Learned](https://github.com/tryber/sd-014-a-project-lessons-learned/pull/24) - [GitHub Pages](https://gugadolzan.github.io/projects/lessons-learned/)
 
 #### Bloco 04: Introdução à JavaScript e Lógica de Programação
 
@@ -47,7 +47,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **02**: JavaScript - Array e loop For
 - [X] **03**: JavaScript - Lógica de Programação e Algoritmos
 - [X] **04**: JavaScript - Objetos e funções
-- [X] **05**: [Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
+- [X] **05**: [Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25) - [GitHub Pages](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
@@ -56,11 +56,11 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **03**: JavaScript - Eventos
 - [X] **04**: JavaScript - Web Storage
 - [X] **05**: Fundamentos - JavaScript - Projetos
-- [X] **05**: [Projeto - Arte com Pixels](https://gugadolzan.github.io/projects/pixels-art/)
-- [X] **06**: [Projeto - Lista de tarefas](https://gugadolzan.github.io/projects/todo-list/)
-- [X] **07**: [(Bônus) Projeto - Meme Generator](https://gugadolzan.github.io/projects/meme-generator/)
-- [X] **07**: [(Bônus) Projeto - Adivinhe a Cor](https://gugadolzan.github.io/projects/color-guess/)
-- [X] **07**: [(Bônus) Projeto - Carta Misteriosa](https://gugadolzan.github.io/projects/mistery-letter/)
+- [X] **05**: [Projeto - Arte com Pixels](https://github.com/tryber/sd-014-a-project-pixels-art/pull/25) - [GitHub Pages](https://gugadolzan.github.io/projects/pixels-art/)
+- [X] **06**: [Projeto - Lista de tarefas](https://github.com/tryber/sd-014-a-project-todo-list/pull/12) - [GitHub Pages](https://gugadolzan.github.io/projects/todo-list/)
+- [X] **07**: [(Bônus) Projeto - Carta Misteriosa](https://github.com/tryber/sd-014-a-project-mistery-letter/pull/15) - [GitHub Pages](https://gugadolzan.github.io/projects/mistery-letter/)
+- [X] **07**: [(Bônus) Projeto - Meme Generator](https://github.com/tryber/sd-014-a-project-meme-generator/pull/28) - [GitHub Pages](https://gugadolzan.github.io/projects/meme-generator/)
+- [X] **07**: [(Bônus) Projeto - Adivinhe a Cor](https://github.com/tryber/sd-014-a-project-color-guess/pull/37) - [GitHub Pages](https://gugadolzan.github.io/projects/color-guess/)
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
@@ -70,7 +70,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **03**: CSS Flexbox - Parte 1
 - [X] **04**: CSS Flexbox - Parte 2
 - [X] **05**: CSS Responsivo - Mobile First
-- [X] **06**: [Projeto - Trybewarts](https://gugadolzan.github.io/projects/trybewarts/)
+- [X] **06**: [Projeto - Trybewarts](https://github.com/tryber/sd-014-a-project-trybewarts/pull/33) - [GitHub Pages](https://gugadolzan.github.io/projects/trybewarts/)
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
