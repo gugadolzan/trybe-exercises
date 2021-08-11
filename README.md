@@ -90,7 +90,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 09: JavaScript Assíncrono e Promises
 
-- [ ] **01**: JavaScript JavaScript Assíncrono e Callbacks
+- [X] **01**: JavaScript JavaScript Assíncrono e Callbacks
 - [ ] **02**: JavaScript Promises
 - [ ] **03**: [Projeto - Carrinho de Compras]()
 
