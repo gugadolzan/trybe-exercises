@@ -14,7 +14,9 @@ const fetchPromise = () => {
 
   promise
     .then((result) => [2, 3, 5, 10].map((number) => result / number))
-    .catch(() => console.log('Promise rejeitada'));
+    .catch(() =>
+      console.log('É mais de oito mil! Essa promise deve estar quebrada!')
+    );
 };
 
 fetchPromise();
