@@ -13,7 +13,7 @@ const fetchPromise = () => {
   });
 
   promise
-    .then(() => console.log('Promise resolvida'))
+    .then((result) => [2, 3, 5, 10].map((number) => result / number))
     .catch(() => console.log('Promise rejeitada'));
 };
 
