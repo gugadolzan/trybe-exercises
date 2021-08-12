@@ -7,7 +7,8 @@ const fetchJoke = () => {
   };
 
   fetch(API_URL, myObject) // fetch function returns response object
-    .then(response => console.log(response));
+    .then(response => response.json()) // .json() converts the contents of the body into a JSON return
+    .then(data => console.log(data));
 };
 
 window.onload = () => fetchJoke();
