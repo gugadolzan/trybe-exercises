@@ -92,11 +92,11 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 - [X] **01**: JavaScript JavaScript Assíncrono e Callbacks
 - [X] **02**: JavaScript Promises
-- [ ] **03**: [Projeto - Carrinho de Compras]()
+- [X] **03**: [Projeto - Carrinho de Compras](https://github.com/tryber/sd-014-a-project-shopping-cart/pull/5)
 
 #### Bloco 10: Testes automatizados com Jest
 
-- [ ] **01**: Primeiros passos no Jest
+- [X] **01**: Primeiros passos no Jest
 - [ ] **02**: Jest - Testes Assíncronos
 - [ ] **03**: Jest - Simulando comportamentos
 - [ ] **04**: [Projeto - Jest Assíncrono e Mocking]()
