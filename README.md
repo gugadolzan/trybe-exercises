@@ -47,7 +47,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **02**: JavaScript - Array e loop For
 - [X] **03**: JavaScript - Lógica de Programação e Algoritmos
 - [X] **04**: JavaScript - Objetos e funções
-- [X] **05**: [Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25) - [GitHub Pages](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
+- [X] **05**: [Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
