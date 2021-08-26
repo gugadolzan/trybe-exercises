@@ -1,4 +1,3 @@
-// import from objetcs.js using require
 const { obj1, obj2, obj3 } = require('../src/objects');
 
 describe('Compare dois objetos para verificar se são idênticos ou não', () => {
