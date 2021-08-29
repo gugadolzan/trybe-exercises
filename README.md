@@ -98,8 +98,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 - [X] **01**: Primeiros passos no Jest
 - [X] **02**: Jest - Testes Assíncronos
-- [ ] **03**: Jest - Simulando comportamentos
-- [ ] **04**: [Projeto - Jest Assíncrono e Mocking]()
+- [X] **03**: Jest - Simulando comportamentos
+- [X] **04**: [Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-014-a-project-jest/pull/42)
 
 ## Desenvolvimento Front-end
 
