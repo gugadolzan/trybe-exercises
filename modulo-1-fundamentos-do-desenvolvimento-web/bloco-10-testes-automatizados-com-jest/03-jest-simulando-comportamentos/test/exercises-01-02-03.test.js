@@ -19,4 +19,29 @@ describe('tests randomNumber function', () => {
     expect(service.randomNumber).toHaveBeenCalledTimes(1);
     expect(service.randomNumber).toHaveBeenCalledWith(10, 2);
   });
+
+  describe('testing implementations', () => {
+    it('should return multiplication of parameters - mock implementation', () => {
+      service.randomNumber = jest
+        .fn()
+        .mockImplementation((a, b, c) => a * b * c);
+
+      expect(service.randomNumber(2, 3, 4)).toBe(24);
+      expect(service.randomNumber).toHaveBeenCalled();
+      expect(service.randomNumber).toHaveBeenCalledTimes(1);
+      expect(service.randomNumber).toHaveBeenCalledWith(2, 3, 4);
+    });
+
+    it('it should return parameter doubled - mock implementation', () => {
+      service.randomNumber.mockReset();
+      expect(service.randomNumber).toHaveBeenCalledTimes(0);
+
+      service.randomNumber.mockImplementation((a) => a * 2);
+
+      expect(service.randomNumber(5)).toBe(10);
+      expect(service.randomNumber).toHaveBeenCalled();
+      expect(service.randomNumber).toHaveBeenCalledTimes(1);
+      expect(service.randomNumber).toHaveBeenCalledWith(5);
+    });
+  });
 });
