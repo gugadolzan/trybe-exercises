@@ -97,7 +97,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 10: Testes automatizados com Jest
 
 - [X] **01**: Primeiros passos no Jest
-- [ ] **02**: Jest - Testes Assíncronos
+- [X] **02**: Jest - Testes Assíncronos
 - [ ] **03**: Jest - Simulando comportamentos
 - [ ] **04**: [Projeto - Jest Assíncrono e Mocking]()
 
