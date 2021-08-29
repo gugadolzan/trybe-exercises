@@ -1,6 +1,5 @@
 const service = require('../src/service');
 
-// Exercises 01-03
 describe('tests randomNumber function', () => {
   // Exercise 01
   it('should return 10 - mock return', () => {
@@ -46,36 +45,4 @@ describe('tests randomNumber function', () => {
       expect(service.randomNumber).toHaveBeenCalledWith(5);
     });
   });
-});
-
-// Exercises 04-05
-jest.mock('../src/service');
-// toUpperCase, firstChar, concatStrings
-it('tests toUpperCase function', () => {
-  service.toUpperCase.mockImplementation((str) => str.toLowerCase());
-
-  expect(service.toUpperCase('UPPERCASE')).toBe('uppercase');
-  expect(service.toUpperCase).toHaveBeenCalled();
-  expect(service.toUpperCase).toHaveBeenCalledTimes(1);
-  expect(service.toUpperCase).toHaveBeenCalledWith('UPPERCASE');
-});
-
-it('tests firstChar function', () => {
-  service.firstChar.mockImplementation((str) => str[str.length - 1]);
-
-  expect(service.firstChar('letter')).toBe('r');
-  expect(service.firstChar).toHaveBeenCalled();
-  expect(service.firstChar).toHaveBeenCalledTimes(1);
-  expect(service.firstChar).toHaveBeenCalledWith('letter');
-});
-
-it('tests concatStrings function', () => {
-  service.concatStrings.mockImplementation((str, str2, str3) =>
-    str.concat(str2, str3)
-  );
-
-  expect(service.concatStrings('tr', 'y', 'be')).toBe('trybe');
-  expect(service.concatStrings).toHaveBeenCalled();
-  expect(service.concatStrings).toHaveBeenCalledTimes(1);
-  expect(service.concatStrings).toHaveBeenCalledWith('tr', 'y', 'be');
 });
