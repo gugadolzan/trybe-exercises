@@ -20,6 +20,7 @@ describe('tests randomNumber function', () => {
     expect(service.randomNumber).toHaveBeenCalledWith(10, 2);
   });
 
+  // Exercise 03
   describe('testing implementations', () => {
     it('should return multiplication of parameters - mock implementation', () => {
       service.randomNumber = jest
