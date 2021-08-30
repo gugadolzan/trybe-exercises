@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const wordLengths = (arr) => arr.map((word) => word.length);
+const wordLengths = (words) => words.map((word) => word.length);
 
 const words = ['sun', 'potato', 'roundabout', 'pizza'];
 const expected = [3, 6, 10, 5];

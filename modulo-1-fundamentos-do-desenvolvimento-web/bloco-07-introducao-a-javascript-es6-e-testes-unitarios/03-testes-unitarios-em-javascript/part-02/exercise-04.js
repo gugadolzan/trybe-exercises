@@ -1,7 +1,7 @@
 const assert = require('assert');
 
 const findTheNeedle = (words, find) => words.indexOf(find);
-d;
+
 let words = ['house', 'train', 'slide', 'needle', 'book'];
 let expected = 3;
 let output = findTheNeedle(words, 'needle');
