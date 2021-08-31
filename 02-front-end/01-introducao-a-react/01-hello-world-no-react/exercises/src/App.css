@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+.col-sm-4 {
+  margin: 40px 20px;
+}
