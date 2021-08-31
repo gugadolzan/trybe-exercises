@@ -105,9 +105,9 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 11: Introdução à React
 
-- [ ] **01**: Introdução - Front-end
-- [ ] **01**: Introdução - React
-- [ ] **01**: 'Hello, world!' no React!
+- [X] **01**: Introdução - Front-end
+- [X] **01**: Introdução - React
+- [X] **01**: 'Hello, world!' no React!
 - [ ] **02**: Componentes React
 - [ ] **03**: Projeto - [Movie Cards Library]()
 
