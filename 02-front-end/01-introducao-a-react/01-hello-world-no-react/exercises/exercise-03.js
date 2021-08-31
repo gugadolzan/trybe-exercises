@@ -54,3 +54,13 @@
 //     <hr />
 //   </div>
 // );
+
+// Create a Stateless Functional Component
+
+// const MyComponent = function () {
+//   return (
+//     <div>
+//       <p>string of text</p>
+//     </div>
+//   );
+// };
