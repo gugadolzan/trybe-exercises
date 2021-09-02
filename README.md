@@ -108,8 +108,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **01**: Introdução - Front-end
 - [X] **01**: Introdução - React
 - [X] **01**: 'Hello, world!' no React!
-- [ ] **02**: Componentes React
-- [ ] **03**: Projeto - [Movie Cards Library]()
+- [X] **02**: Componentes React
+- [X] **03**: Projeto - [Movie Cards Library](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/5) - [GitHub Pages](https://gugadolzan.github.io/movie-library-cards/)
 
 #### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
