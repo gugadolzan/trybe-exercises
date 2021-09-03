@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Pokédex</h1>
+        <h1 className="title">Pokédex</h1>
         <Pokedex pokemons={pokemons} />
       </>
     );
