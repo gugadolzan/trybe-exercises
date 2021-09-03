@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 class Pokemon extends Component {
   render() {
-    console.log(this.props);
-
     const { pokemon } = this.props;
     const { id, name, type, averageWeight, image, moreInfo } = pokemon;
     const { value, measurementUnit } = averageWeight;
@@ -12,7 +10,9 @@ class Pokemon extends Component {
       <div className="pokemonCard">
         <div className="pokemonBody">
           <p>{id}</p>
-          <p>{name}</p>
+          <p>
+            <b>{name}</b>
+          </p>
           <p>{type}</p>
           <p>Average Weight: {value + measurementUnit}</p>
         </div>
