@@ -113,7 +113,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] **01**: Componentes com estado e eventos
+- [X] **01**: Componentes com estado e eventos
 - [ ] **02**: Formulários no React
 - [ ] **03**: Projeto - [Movie Cards Library Stateful]()
 
