@@ -6,16 +6,21 @@ class Pokemon extends Component {
 
     const { pokemon } = this.props;
     const { id, name, type, averageWeight, image, moreInfo } = pokemon;
+    const { value, measurementUnit } = averageWeight;
 
     return (
-      <>
-        <p>{id}</p>
-        <p>{name}</p>
-        <p>{type}</p>
-        <p>{averageWeight.value + averageWeight.measurementUnit}</p>
-        <p>{image}</p>
-        <p>{moreInfo}</p>
-      </>
+      <div className="pokemonCard">
+        <div className="pokemonBody">
+          <p>{id}</p>
+          <p>{name}</p>
+          <p>{type}</p>
+          <p>Average Weight: {value + measurementUnit}</p>
+        </div>
+        <div className="pokemonAside">
+          <img src={image} alt={name} />
+          <a href={moreInfo}>More Info</a>
+        </div>
+      </div>
     );
   }
 }
