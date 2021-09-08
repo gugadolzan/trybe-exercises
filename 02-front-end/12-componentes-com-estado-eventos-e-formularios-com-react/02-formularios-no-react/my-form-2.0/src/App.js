@@ -20,16 +20,15 @@ class App extends Component {
     };
   }
 
-  handleChange({ target }) {
-    const { name, value } = target;
+  handleChange({ target: { name, value } }) {
+    if (name === 'name') value = value.toUpperCase();
 
-    this.setState({
-      [name]: value,
-    });
+    this.setState({ [name]: value });
   }
 
   render() {
     const { handleChange } = this;
+    const { name } = this.state;
 
     return (
       <form>
@@ -45,6 +44,7 @@ class App extends Component {
               onChange={handleChange}
               required
               type="text"
+              value={name}
             />
           </label>
 
