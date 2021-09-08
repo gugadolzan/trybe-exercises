@@ -11,32 +11,44 @@ class App extends Component {
 
           <label htmlFor="name">
             Nome:
-            <input id="name" name="name" type="text" />
+            <input id="name" maxLength="40" name="name" required type="text" />
           </label>
 
           <label htmlFor="email">
             Email:
-            <input id="email" name="email" type="text" />
+            <input
+              id="email"
+              maxLength="50"
+              name="email"
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="cpf">
             CPF:
-            <input id="cpf" name="cpf" type="text" />
+            <input id="cpf" maxLength="11" name="cpf" required type="text" />
           </label>
 
           <label htmlFor="address">
             Endereço:
-            <input id="address" name="address" type="text" />
+            <input
+              id="address"
+              maxLength="200"
+              name="address"
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="city">
             Cidade:
-            <input id="city" name="city" type="text" />
+            <input id="city" maxLength="28" name="city" required type="text" />
           </label>
 
           <label htmlFor="state">
             Estado:
-            <select id="state" name="state">
+            <select id="state" name="state" required>
               <option disabled value="" selected>
                 Selecione
               </option>
