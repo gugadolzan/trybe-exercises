@@ -3,7 +3,34 @@ import states from './data';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      name: '',
+      email: '',
+      cpf: '',
+      address: '',
+      city: '',
+      state: '',
+      addressType: '',
+      resume: '',
+      role: '',
+      roleDescription: '',
+    };
+  }
+
+  handleChange({ target }) {
+    const { name, value } = target;
+
+    this.setState({
+      [name]: value,
+    });
+  }
+
   render() {
+    const { handleChange } = this;
+
     return (
       <form>
         <fieldset>
@@ -11,7 +38,14 @@ class App extends Component {
 
           <label htmlFor="name">
             Nome:
-            <input id="name" maxLength="40" name="name" required type="text" />
+            <input
+              id="name"
+              maxLength="40"
+              name="name"
+              onChange={handleChange}
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="email">
@@ -20,6 +54,7 @@ class App extends Component {
               id="email"
               maxLength="50"
               name="email"
+              onChange={handleChange}
               required
               type="text"
             />
@@ -27,7 +62,14 @@ class App extends Component {
 
           <label htmlFor="cpf">
             CPF:
-            <input id="cpf" maxLength="11" name="cpf" required type="text" />
+            <input
+              id="cpf"
+              maxLength="11"
+              name="cpf"
+              onChange={handleChange}
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="address">
@@ -36,6 +78,7 @@ class App extends Component {
               id="address"
               maxLength="200"
               name="address"
+              onChange={handleChange}
               required
               type="text"
             />
@@ -43,13 +86,26 @@ class App extends Component {
 
           <label htmlFor="city">
             Cidade:
-            <input id="city" maxLength="28" name="city" required type="text" />
+            <input
+              id="city"
+              maxLength="28"
+              name="city"
+              onChange={handleChange}
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="state">
             Estado:
-            <select id="state" name="state" required>
-              <option disabled value="" selected>
+            <select
+              defaultValue=""
+              id="state"
+              name="state"
+              onChange={handleChange}
+              required
+            >
+              <option disabled value="">
                 Selecione
               </option>
 
@@ -64,13 +120,22 @@ class App extends Component {
           <label htmlFor="house">
             Tipo de moradia:
             <label>
-              <input id="house" name="addressType" type="radio" value="house" />{' '}
+              <input
+                id="house"
+                name="addressType"
+                onChange={handleChange}
+                type="radio"
+                required
+                // Reference: <https://stackoverflow.com/questions/8287779/how-to-use-the-required-attribute-with-a-radio-input-field>
+                value="house"
+              />{' '}
               Casa
             </label>
             <label htmlFor="apartment">
               <input
                 id="apartment"
                 name="addressType"
+                onChange={handleChange}
                 type="radio"
                 value="apartment"
               />{' '}
@@ -84,12 +149,24 @@ class App extends Component {
 
           <label htmlFor="resume">
             Resumo do currículo
-            <textarea id="resume" maxLength="1000" name="resume" required />
+            <textarea
+              id="resume"
+              maxLength="1000"
+              name="resume"
+              onChange={handleChange}
+              required
+            />
           </label>
 
           <label htmlFor="role">
             Cargo
-            <input maxLength="40" name="role" required type="text" />
+            <input
+              maxLength="40"
+              name="role"
+              onChange={handleChange}
+              required
+              type="text"
+            />
           </label>
 
           <label htmlFor="roleDescription">
@@ -98,6 +175,7 @@ class App extends Component {
               id="roleDescription"
               maxLength="500"
               name="roleDescription"
+              onChange={handleChange}
               required
             />
           </label>
