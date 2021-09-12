@@ -5,7 +5,7 @@ class ProfessionalForm extends Component {
     const { children, onChange } = this.props;
 
     return (
-      <fieldset>
+      <fieldset className="form-fieldset">
         <legend>{children}</legend>
 
         <label htmlFor="resume">

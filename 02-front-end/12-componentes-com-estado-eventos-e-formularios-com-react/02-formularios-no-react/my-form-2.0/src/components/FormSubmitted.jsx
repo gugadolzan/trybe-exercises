@@ -18,7 +18,7 @@ class FormSubmitted extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="form-submitted">
         <h2>Dados enviados</h2>
         <h3>Pessoal</h3>
         <p> Name: {name}</p>

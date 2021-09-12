@@ -47,30 +47,37 @@ class App extends Component {
     const { handleBlur, handleChange } = this;
 
     return (
-      <>
-        <form>
-          <PersonalForm
-            onBlur={handleBlur}
-            onChange={handleChange}
-            values={this.state}
+      <div className="App">
+        <div>
+          <form>
+            <PersonalForm
+              onBlur={handleBlur}
+              onChange={handleChange}
+              values={this.state}
+            >
+              Dados pessoais
+            </PersonalForm>
+            <ProfessionalForm onChange={handleChange}>
+              Dados do seu último emprego
+            </ProfessionalForm>
+          </form>
+          <button
+            className="form-button"
+            onClick={() => this.setState({ submitted: true })}
+            type="submit"
           >
-            Dados pessoais
-          </PersonalForm>
-          <ProfessionalForm onChange={handleChange}>
-            Dados do seu último emprego
-          </ProfessionalForm>
-        </form>
-        <button
-          onClick={() => this.setState({ submitted: true })}
-          type="submit"
-        >
-          Enviar
-        </button>
-        <button onClick={() => this.setState(this.initialState)} type="reset">
-          Limpar
-        </button>
+            Enviar
+          </button>
+          <button
+            className="form-button"
+            onClick={() => this.setState(this.initialState)}
+            type="reset"
+          >
+            Limpar
+          </button>
+        </div>
         {this.state.submitted && <FormSubmitted currentState={this.state} />}
-      </>
+      </div>
     );
   }
 }

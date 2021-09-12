@@ -12,7 +12,7 @@ class PersonalForm extends Component {
     } = this.props;
 
     return (
-      <fieldset>
+      <fieldset className="form-fieldset">
         <legend>{children}</legend>
 
         <label htmlFor="name">
