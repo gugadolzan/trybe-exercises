@@ -30,10 +30,21 @@ class App extends Component {
     this.state = this.initialState;
   }
 
+  validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+  // Reference: https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+
   handleBlur({ target: { name, value } }) {
     if (name === 'city' && !isNaN(value[0])) {
       // NaN stands for Not a Number
       this.setState({ [name]: '' });
+    }
+
+    if (name === 'email' && !this.validateEmail(value)) {
+      this.setState({ [name]: 'Email inválido' });
     }
   }
 

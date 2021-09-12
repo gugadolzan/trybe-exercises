@@ -8,7 +8,7 @@ class PersonalForm extends Component {
       children,
       onBlur,
       onChange,
-      values: { name, city },
+      values: { email, name, city },
     } = this.props;
 
     return (
@@ -34,9 +34,11 @@ class PersonalForm extends Component {
             id="email"
             maxLength="50"
             name="email"
+            onBlur={onBlur}
             onChange={onChange}
             required
             type="text"
+            value={email}
           />
         </label>
 
