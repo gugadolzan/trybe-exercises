@@ -109,13 +109,13 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **01**: Introdução - React
 - [X] **01**: 'Hello, world!' no React!
 - [X] **02**: Componentes React
-- [X] **03**: Projeto - [Movie Cards Library](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/5) - [GitHub Pages](https://gugadolzan.github.io/movie-library-cards/)
+- [X] **03**: Projeto - [Movie Cards Library](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/5) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library/)
 
 #### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
 - [X] **01**: Componentes com estado e eventos
 - [X] **02**: Formulários no React
-- [ ] **03**: Projeto - [Movie Cards Library Stateful]()
+- [X] **03**: Projeto - [Movie Cards Library Stateful](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/47) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library-stateful/)
 
 #### Bloco 13: Ciclo de Vida de Componentes e React Router
 
