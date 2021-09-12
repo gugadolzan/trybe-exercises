@@ -5,6 +5,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
+    this.handleBlur = this.handleBlur.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.state = {
       name: '',
@@ -20,6 +21,13 @@ class App extends Component {
     };
   }
 
+  handleBlur({ target: { name, value } }) {
+    if (name === 'city' && !isNaN(value[0])) {
+      // NaN stands for Not a Number
+      this.setState({ [name]: '' });
+    }
+  }
+
   handleChange({ target: { name, value } }) {
     if (name === 'name') value = value.toUpperCase();
 
@@ -27,8 +35,8 @@ class App extends Component {
   }
 
   render() {
-    const { handleChange } = this;
-    const { name } = this.state;
+    const { handleBlur, handleChange } = this;
+    const { name, city } = this.state;
 
     return (
       <form>
@@ -90,9 +98,11 @@ class App extends Component {
               id="city"
               maxLength="28"
               name="city"
+              onBlur={handleBlur}
               onChange={handleChange}
               required
               type="text"
+              value={city}
             />
           </label>
 
