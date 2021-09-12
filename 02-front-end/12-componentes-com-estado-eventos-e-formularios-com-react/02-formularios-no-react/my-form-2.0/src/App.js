@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import states from './data';
+
+import PersonalForm from './components/PersonalForm';
+import ProfessionalForm from './components/ProfessionalForm';
+
 import './App.css';
 
 class App extends Component {
@@ -36,163 +39,19 @@ class App extends Component {
 
   render() {
     const { handleBlur, handleChange } = this;
-    const { name, city } = this.state;
 
     return (
       <form>
-        <fieldset>
-          <legend>Dados pessoais</legend>
-
-          <label htmlFor="name">
-            Nome:
-            <input
-              id="name"
-              maxLength="40"
-              name="name"
-              onChange={handleChange}
-              required
-              type="text"
-              value={name}
-            />
-          </label>
-
-          <label htmlFor="email">
-            Email:
-            <input
-              id="email"
-              maxLength="50"
-              name="email"
-              onChange={handleChange}
-              required
-              type="text"
-            />
-          </label>
-
-          <label htmlFor="cpf">
-            CPF:
-            <input
-              id="cpf"
-              maxLength="11"
-              name="cpf"
-              onChange={handleChange}
-              required
-              type="text"
-            />
-          </label>
-
-          <label htmlFor="address">
-            Endereço:
-            <input
-              id="address"
-              maxLength="200"
-              name="address"
-              onChange={handleChange}
-              required
-              type="text"
-            />
-          </label>
-
-          <label htmlFor="city">
-            Cidade:
-            <input
-              id="city"
-              maxLength="28"
-              name="city"
-              onBlur={handleBlur}
-              onChange={handleChange}
-              required
-              type="text"
-              value={city}
-            />
-          </label>
-
-          <label htmlFor="state">
-            Estado:
-            <select
-              defaultValue=""
-              id="state"
-              name="state"
-              onChange={handleChange}
-              required
-            >
-              <option disabled value="">
-                Selecione
-              </option>
-
-              {states.map((state) => (
-                <option key={state} value={state}>
-                  {state}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label htmlFor="house">
-            Tipo de moradia:
-            <label>
-              <input
-                id="house"
-                name="addressType"
-                onChange={handleChange}
-                type="radio"
-                required
-                // Reference: <https://stackoverflow.com/questions/8287779/how-to-use-the-required-attribute-with-a-radio-input-field>
-                value="house"
-              />{' '}
-              Casa
-            </label>
-            <label htmlFor="apartment">
-              <input
-                id="apartment"
-                name="addressType"
-                onChange={handleChange}
-                type="radio"
-                value="apartment"
-              />{' '}
-              Apartamento
-            </label>
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Dados do seu último emprego</legend>
-
-          <label htmlFor="resume">
-            Resumo do currículo
-            <textarea
-              id="resume"
-              maxLength="1000"
-              name="resume"
-              onChange={handleChange}
-              required
-            />
-          </label>
-
-          <label htmlFor="role">
-            Cargo
-            <input
-              maxLength="40"
-              name="role"
-              onChange={handleChange}
-              onMouseEnter={() =>
-                alert('Preencha com cuidado esta informação.')
-              }
-              required
-              type="text"
-            />
-          </label>
-
-          <label htmlFor="roleDescription">
-            Descrição do cargo:
-            <textarea
-              id="roleDescription"
-              maxLength="500"
-              name="roleDescription"
-              onChange={handleChange}
-              required
-            />
-          </label>
-        </fieldset>
+        <PersonalForm
+          onBlur={handleBlur}
+          onChange={handleChange}
+          values={this.state}
+        >
+          Dados pessoais
+        </PersonalForm>
+        <ProfessionalForm onChange={handleChange}>
+          Dados do seu último emprego
+        </ProfessionalForm>
       </form>
     );
   }
