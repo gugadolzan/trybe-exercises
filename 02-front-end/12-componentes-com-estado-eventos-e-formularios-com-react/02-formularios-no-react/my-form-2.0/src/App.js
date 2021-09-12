@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import PersonalForm from './components/PersonalForm';
 import ProfessionalForm from './components/ProfessionalForm';
+import FormSubmitted from './components/FormSubmitted';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
       resume: '',
       role: '',
       roleDescription: '',
+      submitted: false,
     };
   }
 
@@ -41,18 +43,27 @@ class App extends Component {
     const { handleBlur, handleChange } = this;
 
     return (
-      <form>
-        <PersonalForm
-          onBlur={handleBlur}
-          onChange={handleChange}
-          values={this.state}
+      <>
+        <form>
+          <PersonalForm
+            onBlur={handleBlur}
+            onChange={handleChange}
+            values={this.state}
+          >
+            Dados pessoais
+          </PersonalForm>
+          <ProfessionalForm onChange={handleChange}>
+            Dados do seu último emprego
+          </ProfessionalForm>
+        </form>
+        <button
+          onClick={() => this.setState({ submitted: true })}
+          type="submit"
         >
-          Dados pessoais
-        </PersonalForm>
-        <ProfessionalForm onChange={handleChange}>
-          Dados do seu último emprego
-        </ProfessionalForm>
-      </form>
+          Enviar
+        </button>
+        {this.state.submitted && <FormSubmitted currentState={this.state} />}
+      </>
     );
   }
 }
