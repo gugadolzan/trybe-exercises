@@ -9,9 +9,8 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.handleBlur = this.handleBlur.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.state = {
+
+    this.initialState = {
       name: '',
       email: '',
       cpf: '',
@@ -24,6 +23,11 @@ class App extends Component {
       roleDescription: '',
       submitted: false,
     };
+
+    this.handleBlur = this.handleBlur.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
+    this.state = this.initialState;
   }
 
   handleBlur({ target: { name, value } }) {
@@ -61,6 +65,9 @@ class App extends Component {
           type="submit"
         >
           Enviar
+        </button>
+        <button onClick={() => this.setState(this.initialState)} type="reset">
+          Limpar
         </button>
         {this.state.submitted && <FormSubmitted currentState={this.state} />}
       </>

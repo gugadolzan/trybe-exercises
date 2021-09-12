@@ -18,7 +18,7 @@ class FormSubmitted extends Component {
     } = this.props;
 
     return (
-      <>
+      <div>
         <h2>Dados enviados</h2>
         <h3>Pessoal</h3>
         <p> Name: {name}</p>
@@ -32,7 +32,7 @@ class FormSubmitted extends Component {
         <p> Currículo: {resume}</p>
         <p> Cargo: {role}</p>
         <p> Descrição do cargo: {roleDescription}</p>
-      </>
+      </div>
     );
   }
 }
