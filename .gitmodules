@@ -1,3 +1,6 @@
 [submodule "01-fundamentals/06-html-e-css-forms-flexbox-e-responsivo/03-css-flexbox-parte-1/exercise-tech-gallery"]
 	path = 01-fundamentals/06-html-e-css-forms-flexbox-e-responsivo/03-css-flexbox-parte-1/exercise-tech-gallery
 	url = https://github.com/gugadolzan/exercise-tech-gallery
+[submodule "02-front-end/12-componentes-com-estado-eventos-e-formularios-com-react/01-componentes-com-estado-e-eventos/exercise-pokedex-state"]
+	path = 02-front-end/12-componentes-com-estado-eventos-e-formularios-com-react/01-componentes-com-estado-e-eventos/exercise-pokedex-state
+	url = https://github.com/gugadolzan/exercise-pokedex-state
