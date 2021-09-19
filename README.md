@@ -119,13 +119,13 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 13: Ciclo de Vida de Componentes e React Router
 
-- [ ] **01**: Ciclo de vida de componentes
-- [ ] **02**: React Router
-- [ ] **03**: Projeto - [Movie Cards Library CRUD]()
+- [X] **01**: Ciclo de vida de componentes
+- [X] **02**: React Router
+- [X] **03**: Projeto - [TrybeTunes](https://github.com/tryber/sd-014-a-project-trybetunes/pull/67) - [GitHub Pages](https://gugadolzan.github.io/trybetunes/)
 
 #### Bloco 14: Metodologias Ágeis
 
-- [ ] **01**: Metodologias Ágeis
+- [X] **01**: Metodologias Ágeis
 - [ ] **02**: Projeto - [Frontend Online Store]()
 
 #### Bloco 15: Testes automatizados com React Testing Library
