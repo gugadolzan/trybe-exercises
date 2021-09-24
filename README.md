@@ -126,7 +126,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 14: Metodologias Ágeis
 
 - [X] **01**: Metodologias Ágeis
-- [ ] **02**: Projeto - [Frontend Online Store]()
+- [X] **02**: Projeto - [Frontend Online Store](https://github.com/tryber/sd-014-a-project-frontend-online-store/pull/492)
 
 #### Bloco 15: Testes automatizados com React Testing Library
 
