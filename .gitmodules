@@ -4,3 +4,9 @@
 [submodule "02-front-end/12-componentes-com-estado-eventos-e-formularios-com-react/01-componentes-com-estado-e-eventos/exercise-pokedex-state"]
 	path = 02-front-end/12-componentes-com-estado-eventos-e-formularios-com-react/01-componentes-com-estado-e-eventos/exercise-pokedex-state
 	url = https://github.com/gugadolzan/exercise-pokedex-state
+[submodule "02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-todo-list"]
+	path = 02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-todo-list
+	url = https://github.com/gugadolzan/exercise-todo-list
+[submodule "02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-tic-tac-toe"]
+	path = 02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-tic-tac-toe
+	url = https://github.com/gugadolzan/exercise-tic-tac-toe
