@@ -131,9 +131,9 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 15: Testes automatizados com React Testing Library
 
 - [X] **01**: RTL - Primeiros passos
-- [ ] **02**: RTL - Mocks e Inputs
-- [ ] **03**: RTL - Testando React Router
-- [ ] **04**: Projeto - [Testes em React]()
+- [X] **02**: RTL - Mocks e Inputs
+- [X] **03**: RTL - Testando React Router
+- [X] **04**: Projeto - [Testes em React](https://github.com/tryber/sd-014-a-project-react-testing-library/pull/119)
 
 #### Bloco 16: Gerenciamento de estado com Redux
 
