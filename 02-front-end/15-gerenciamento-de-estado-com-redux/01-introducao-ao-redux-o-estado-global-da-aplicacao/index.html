@@ -31,13 +31,9 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
+      <button id="random">Random color</button>
     </div>
     <script>
-      const ESTADO_INICIAL = {
-        colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
-        index: 0,
-      };
-
       const NEXT_COLOR = 'NEXT_COLOR';
       const PREVIOUS_COLOR = 'PREVIOUS_COLOR';
 
@@ -47,6 +43,41 @@
 
       const previousColor = {
         type: PREVIOUS_COLOR,
+      };
+
+      const randomColor = {
+        type: 'RANDOM_COLOR',
+      };
+
+      function criarCor() {
+        const oneChar = [
+          '1',
+          '2',
+          '3',
+          '4',
+          '5',
+          '6',
+          '7',
+          '8',
+          '9',
+          'A',
+          'B',
+          'C',
+          'D',
+          'E',
+          'F',
+        ];
+        let cor = '#';
+        const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+        for (let i = 0; i < 6; i += 1) {
+          cor += oneChar[aleatorio()];
+        }
+        return cor;
+      }
+
+      const ESTADO_INICIAL = {
+        colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+        index: 0,
       };
 
       const reducer = (state = ESTADO_INICIAL, action) => {
@@ -64,6 +95,14 @@
               ...state,
               index: (state.index - 1 + colorsLength) % colorsLength,
             };
+          case 'RANDOM_COLOR':
+            const newColor = criarCor();
+            return {
+              // ...state,
+              // not necessary because the state is entirely replaced
+              colors: [...state.colors, newColor],
+              index: colorsLength,
+            };
           default:
             return state;
         }
@@ -78,6 +117,10 @@
       document
         .getElementById('previous')
         .addEventListener('click', () => store.dispatch(previousColor));
+
+      document
+        .getElementById('random')
+        .addEventListener('click', () => store.dispatch(randomColor));
 
       store.subscribe(
         () =>
