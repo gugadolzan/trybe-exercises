@@ -22,6 +22,14 @@
       <p>Cidade: <span id="cidade-2">São Paulo</span></p>
     </div>
     <script>
+      const changeName = {
+        type: 'CHANGE_NAME',
+        payload: {
+          name: 'Bruna',
+          lastName: 'Santana Oliveira',
+        },
+      };
+
       const ESTADO_INICIAL_1 = {
         nome: 'Rodrigo',
         sobrenome: 'Santos da Silva',
@@ -50,10 +58,12 @@
         }
       };
 
-      const reducers = combineReducers({
+      const reducers = Redux.combineReducers({
         meuPrimeiroReducer,
         meuSegundoReducer,
       });
+
+      const store = createStore(reducers);
     </script>
   </body>
 </html>
