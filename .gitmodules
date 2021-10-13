@@ -10,3 +10,6 @@
 [submodule "02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-tic-tac-toe"]
 	path = 02-front-end/15-testes-automatizados-com-react-testing-library/01-rtl-primeiros-passos/exercise-tic-tac-toe
 	url = https://github.com/gugadolzan/exercise-tic-tac-toe
+[submodule "02-front-end/15-testes-automatizados-com-react-testing-library/02-rtl-mocks-e-inputs/exercise-digimon-finders"]
+	path = 02-front-end/15-testes-automatizados-com-react-testing-library/02-rtl-mocks-e-inputs/exercise-digimon-finders
+	url = https://github.com/gugadolzan/exercise-digimon-finders
