@@ -71,13 +71,19 @@
 
       const store = Redux.createStore(reducer);
 
-      document.getElementById('next').addEventListener('click', () => {
-        store.dispatch(nextColor);
-      });
+      document
+        .getElementById('next')
+        .addEventListener('click', () => store.dispatch(nextColor));
 
-      document.getElementById('previous').addEventListener('click', () => {
-        store.dispatch(previousColor);
-      });
+      document
+        .getElementById('previous')
+        .addEventListener('click', () => store.dispatch(previousColor));
+
+      store.subscribe(
+        () =>
+          (document.getElementById('value').innerHTML =
+            store.getState().colors[store.getState().index])
+      );
     </script>
   </body>
 </html>
