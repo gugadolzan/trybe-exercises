@@ -67,7 +67,7 @@
         meuSegundoReducer,
       });
 
-      const store = createStore(reducers);
+      const store = Redux.createStore(reducers);
 
       window.onload = () => {
         setTimeout(() => {
@@ -87,6 +87,16 @@
           });
         }, 3000);
       };
+
+      store.subscribe(() => {
+        const { meuPrimeiroReducer, meuSegundoReducer } = store.getState();
+        document.getElementById('nome-1').innerText = meuPrimeiroReducer.nome;
+        document.getElementById('sobrenome-1').innerText =
+          meuPrimeiroReducer.sobrenome;
+        document.getElementById('nome-2').innerText = meuSegundoReducer.nome;
+        document.getElementById('sobrenome-2').innerText =
+          meuSegundoReducer.sobrenome;
+      });
     </script>
   </body>
 </html>
