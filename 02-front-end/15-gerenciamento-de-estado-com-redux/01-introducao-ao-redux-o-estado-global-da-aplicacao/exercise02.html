@@ -68,6 +68,25 @@
       });
 
       const store = createStore(reducers);
+
+      window.onload = () => {
+        setTimeout(() => {
+          store.dispatch({
+            type: 'CHANGE_FIRST_NAME',
+            payload: {
+              nome: 'Bruna',
+              sobrenome: 'Santana Oliveira',
+            },
+          });
+          store.dispatch({
+            type: 'CHANGE_SECOND_NAME',
+            payload: {
+              nome: 'Rodrigo',
+              sobrenome: 'Santos da Silva',
+            },
+          });
+        }, 3000);
+      };
     </script>
   </body>
 </html>
