@@ -38,10 +38,24 @@
         index: 0,
       };
 
+      const NEXT_COLOR = 'NEXT_COLOR';
+      const PREVIOUS_COLOR = 'PREVIOUS_COLOR';
+
       const reducer = (state = ESTADO_INICIAL, action) => {
+        const colorsLength = state.colors.length;
+
         switch (action.type) {
-          // case value:
-          //   return;
+          case NEXT_COLOR:
+            return {
+              ...state,
+              index: (state.index + 1) % colorsLength,
+              // '% colorsLength' so that the index does not exceed the array size
+            };
+          case PREVIOUS_COLOR:
+            return {
+              ...state,
+              index: (state.index - 1 + colorsLength) % colorsLength,
+            };
           default:
             return state;
         }
