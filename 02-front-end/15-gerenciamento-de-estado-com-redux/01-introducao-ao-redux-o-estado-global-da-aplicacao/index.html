@@ -38,7 +38,16 @@
         index: 0,
       };
 
-      const store = Redux.createStore();
+      const reducer = (state = ESTADO_INICIAL, action) => {
+        switch (action.type) {
+          // case value:
+          //   return;
+          default:
+            return state;
+        }
+      };
+
+      const store = Redux.createStore(reducer);
     </script>
   </body>
 </html>
