@@ -13,3 +13,6 @@
 [submodule "02-front-end/15-testes-automatizados-com-react-testing-library/02-rtl-mocks-e-inputs/exercise-digimon-finders"]
 	path = 02-front-end/15-testes-automatizados-com-react-testing-library/02-rtl-mocks-e-inputs/exercise-digimon-finders
 	url = https://github.com/gugadolzan/exercise-digimon-finders
+[submodule "02-front-end/15-gerenciamento-de-estado-com-redux/02-usando-o-redux-no-react/exercise-react-with-redux-intro"]
+	path = 02-front-end/15-gerenciamento-de-estado-com-redux/02-usando-o-redux-no-react/exercise-react-with-redux-intro
+	url = https://github.com/gugadolzan/exercise-react-with-redux-intro
