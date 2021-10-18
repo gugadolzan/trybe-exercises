@@ -139,7 +139,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 - [X] **01**: Introdução ao Redux - O estado global da aplicação
 - [X] **02**: Usando o Redux no React
-- [ ] **03**: Usando o Redux no React - Prática
+- [X] **03**: Usando o Redux no React - Prática
 - [ ] **04**: Usando o Redux no React - Actions Assíncronas
 - [ ] **05**: Testes em React-Redux
 - [ ] **06**: Projeto - [Trybe Wallet]()
