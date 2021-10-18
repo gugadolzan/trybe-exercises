@@ -11,8 +11,12 @@ function InputTodo(props) {
       className="InputTodo"
       onSubmit={(e) => {
         e.preventDefault();
+        if (!inputElement.value.trim()) {
+          return;
+        }
         addTodo(inputElement.value);
         inputElement.value = '';
+        inputElement.focus();
       }}
     >
       <label htmlFor="inputTodo">Tarefa:</label>
