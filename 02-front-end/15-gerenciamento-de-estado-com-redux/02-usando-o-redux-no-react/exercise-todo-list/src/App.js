@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { toggleDone } from './actions';
 import FilterButtons from './components/FilterButtons';
 import InputTodo from './components/InputTodo';
 import Item from './components/Item';
@@ -17,14 +18,20 @@ const getTasks = (listTodo, filter) => {
   }
 };
 
-const App = ({ listTodo, filter }) => (
+const App = ({ listTodo, filter, toggleDone }) => (
   <div className="App">
     <InputTodo />
     <FilterButtons />
     {listTodo && (
       <ul>
         {getTasks(listTodo, filter).map((todoItem, index) => (
-          <li key={index + 1}>
+          <li
+            key={index + 1}
+            onClick={() => toggleDone(todoItem.id)}
+            style={{
+              textDecoration: todoItem.isDone ? 'line-through' : 'none',
+            }}
+          >
             <Item content={todoItem.todo} />
           </li>
         ))}
@@ -38,4 +45,8 @@ const mapStateToProps = (state) => ({
   filter: state.listReducer.filter,
 });
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = (dispatch) => ({
+  toggleDone: (id) => dispatch(toggleDone(id)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
