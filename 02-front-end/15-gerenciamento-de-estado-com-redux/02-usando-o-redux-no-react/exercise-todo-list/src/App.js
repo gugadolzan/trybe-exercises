@@ -1,40 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { addTodo } from './actions';
 import InputTodo from './InputTodo';
 import Item from './Item';
 
-class App extends Component {
-  constructor(props) {
-    super(props)
+const App = ({ addTodo, listTodo }) => (
+  <div className="App">
+    <InputTodo addTodo={(todo) => addTodo(todo)} />
+    {listTodo && (
+      <ul>
+        {listTodo.map((todo, index) => (
+          <li key={index + 1}>
+            <Item content={todo} />
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+);
 
-    this.state = {
-      listTodo: [],
-    };
+const mapStateToProps = (state) => ({
+  listTodo: state.listReducer.listTodo,
+});
 
-    this.addTodo = this.addTodo.bind(this);
-  }
+const mapDispatchToProps = (dispatch) => ({
+  addTodo: (todo) => dispatch(addTodo(todo)),
+});
 
-  addTodo(todo) {
-    this.setState((state) => ({ listTodo: [...state.listTodo, todo] }));
-  }
-
-  render() {
-    const { listTodo } = this.state;
-    return (
-      <div className="App">
-        <InputTodo addTodo={(todo) => this.addTodo(todo)} />
-        {listTodo &&
-          <ul>
-            {
-              listTodo.map((todo, index) => (
-                <li key={index + 1}>
-                  <Item content={todo} />
-                </li>
-              ))
-            }
-          </ul>
-        }
-      </div>
-    );
-  }
-}
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
