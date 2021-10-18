@@ -138,7 +138,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 15 Redux: Gerenciamento de estado com Redux
 
 - [X] **01**: Introdução ao Redux - O estado global da aplicação
-- [ ] **02**: Usando o Redux no React
+- [X] **02**: Usando o Redux no React
 - [ ] **03**: Usando o Redux no React - Prática
 - [ ] **04**: Usando o Redux no React - Actions Assíncronas
 - [ ] **05**: Testes em React-Redux
