@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addTodo } from './actions';
+import { addTodo } from '../actions';
 
 function InputTodo(props) {
   const { addTodo } = props;
