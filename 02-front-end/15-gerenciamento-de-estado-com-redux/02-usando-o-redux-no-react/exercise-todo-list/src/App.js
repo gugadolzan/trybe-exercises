@@ -1,12 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addTodo } from './actions';
 import InputTodo from './InputTodo';
 import Item from './Item';
 
-const App = ({ addTodo, listTodo }) => (
+const App = ({ listTodo }) => (
   <div className="App">
-    <InputTodo addTodo={(todo) => addTodo(todo)} />
+    <InputTodo />
     {listTodo && (
       <ul>
         {listTodo.map((todo, index) => (
@@ -23,8 +22,4 @@ const mapStateToProps = (state) => ({
   listTodo: state.listReducer.listTodo,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  addTodo: (todo) => dispatch(addTodo(todo)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);
