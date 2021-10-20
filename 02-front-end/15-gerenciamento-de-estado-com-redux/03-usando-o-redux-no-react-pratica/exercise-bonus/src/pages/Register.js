@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { addRegister as action } from '../redux/actions';
 
 class Register extends React.Component {
   constructor(props) {
@@ -10,6 +12,7 @@ class Register extends React.Component {
       email: '',
     };
     this.handleChange = this.handleChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   handleChange({ target }) {
@@ -19,8 +22,23 @@ class Register extends React.Component {
     });
   }
 
+  onSubmit() {
+    const { addRegister } = this.props;
+    addRegister(this.state);
+    this.setState({
+      name: '',
+      age: '',
+      email: '',
+    });
+  }
+
   render() {
+    const { userLogin } = this.props;
     const { name, age, email } = this.state;
+
+    if (!userLogin.email || !userLogin.password)
+      return <div>Login não efetuado</div>;
+
     return (
       <div>
         <label htmlFor="name">Nome</label>
@@ -47,7 +65,9 @@ class Register extends React.Component {
           value={email}
         />
         <br />
-        <button type="button">Cadastrar</button>
+        <button onClick={this.onSubmit} type="button">
+          Cadastrar
+        </button>
         <br />
         <Link to="/clients">Clientes Cadastrados</Link>
       </div>
@@ -55,4 +75,12 @@ class Register extends React.Component {
   }
 }
 
-export default Register;
+const mapStateToProps = (state) => ({
+  userLogin: state.loginReducer,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  addRegister: (data) => dispatch(action(data)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Register);
