@@ -16,3 +16,6 @@
 [submodule "02-front-end/15-gerenciamento-de-estado-com-redux/02-usando-o-redux-no-react/exercise-react-with-redux-intro"]
 	path = 02-front-end/15-gerenciamento-de-estado-com-redux/02-usando-o-redux-no-react/exercise-react-with-redux-intro
 	url = https://github.com/gugadolzan/exercise-react-with-redux-intro
+[submodule "02-front-end/15-gerenciamento-de-estado-com-redux/03-usando-o-redux-no-react-pratica/exercise-forms-redux"]
+	path = 02-front-end/15-gerenciamento-de-estado-com-redux/03-usando-o-redux-no-react-pratica/exercise-forms-redux
+	url = https://github.com/gugadolzan/exercise-forms-redux
