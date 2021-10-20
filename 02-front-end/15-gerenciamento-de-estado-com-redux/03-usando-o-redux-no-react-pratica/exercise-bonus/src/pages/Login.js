@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { login as action } from '../redux/actions';
 
 class Login extends Component {
   constructor(props) {
@@ -19,6 +21,7 @@ class Login extends Component {
   }
 
   render() {
+    const { login } = this.props;
     const { email, password } = this.state;
     return (
       <div>
@@ -38,10 +41,16 @@ class Login extends Component {
             value={password}
           />
         </div>
-        <Link to="/clients">Fazer login</Link>
+        <Link onClick={() => login({ email, password })} to="/clients">
+          Fazer login
+        </Link>
       </div>
     );
   }
 }
 
-export default Login;
+const mapDispatchToProps = (dispatch) => ({
+  login: (user) => dispatch(action(user)),
+});
+
+export default connect(null, mapDispatchToProps)(Login);
