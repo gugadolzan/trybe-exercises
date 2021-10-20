@@ -16,7 +16,21 @@ function Clients({ userLogin, registers }) {
       </div>
     );
 
-  return registerLink;
+  return (
+    <>
+      <div>Clientes cadastrados</div>
+      <br />
+      {registers.map((register) => (
+        <div key={register.email}>
+          <p>Nome: {register.name}</p>
+          <p>Idade: {register.age}</p>
+          <p>Email: {register.email}</p>
+          <br />
+        </div>
+      ))}
+      {registerLink}
+    </>
+  );
 }
 
 const mapStateToProps = (state) => ({
