@@ -1,9 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-export default function Clients() {
+function Clients({ userLogin }) {
+  if (!userLogin.email || !userLogin.password)
+    return <div>Login não efetuado</div>;
+
   return (
     <div>
-      <h1>Clients</h1>
+      <Link to="/register">Ir à pagina de cadastro</Link>
     </div>
   );
 }
+
+const mapStateToProps = (state) => ({
+  userLogin: state.loginReducer,
+});
+
+export default connect(mapStateToProps)(Clients);
