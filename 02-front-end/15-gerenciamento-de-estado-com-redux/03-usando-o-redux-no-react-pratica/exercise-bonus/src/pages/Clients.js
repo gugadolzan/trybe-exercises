@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { deleteRegister as action } from '../redux/actions';
 
 class Clients extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Clients extends Component {
         <p>Nome: {register.name}</p>
         <p>Idade: {register.age}</p>
         <p>Email: {register.email}</p>
+        <button onClick={() => this.props.deleteRegister(register)}>X</button>
         <br />
       </div>
     ));
@@ -69,4 +71,8 @@ const mapStateToProps = (state) => ({
   registers: state.registerReducer,
 });
 
-export default connect(mapStateToProps)(Clients);
+const mapDispatchToProps = (dispatch) => ({
+  deleteRegister: (data) => dispatch(action(data)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Clients);
