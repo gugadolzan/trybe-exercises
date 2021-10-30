@@ -140,13 +140,13 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **01**: Introdução ao Redux - O estado global da aplicação
 - [X] **02**: Usando o Redux no React
 - [X] **03**: Usando o Redux no React - Prática
-- [ ] **04**: Usando o Redux no React - Actions Assíncronas
+- [X] **04**: Usando o Redux no React - Actions Assíncronas
 - [ ] **05**: Testes em React-Redux
 - [ ] **06**: Projeto - [Trybe Wallet]()
 
 #### Bloco 16: Projeto Jogo de Trivia
 
-- [ ] **01**: Projeto - [Jogo de Trivia]()
+- [X] **01**: Projeto - [Jogo de Trivia](https://github.com/tryber/sd-014-a-project-trybewallet/pull/121)
 
 #### Bloco 17: Context API e React Hooks
 
