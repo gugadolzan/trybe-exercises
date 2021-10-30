@@ -141,8 +141,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **02**: Usando o Redux no React
 - [X] **03**: Usando o Redux no React - Prática
 - [X] **04**: Usando o Redux no React - Actions Assíncronas
-- [ ] **05**: Testes em React-Redux
-- [ ] **06**: Projeto - [Trybe Wallet]()
+- [X] **05**: Testes em React-Redux
+- [X] **06**: Projeto - [Trybe Wallet](https://github.com/tryber/sd-014-a-project-trybewallet/pull/121)
 
 #### Bloco 16: Projeto Jogo de Trivia
 
@@ -150,9 +150,9 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 17: Context API e React Hooks
 
-- [ ] **01**: Context API do React
-- [ ] **02**: React Hooks - useState e useContextt
-- [ ] **03**: React Hooks - useEffect e Hooks customizados
+- [X] **01**: Context API do React
+- [X] **02**: React Hooks - useState e useContextt
+- [X] **03**: React Hooks - useEffect e Hooks customizados
 - [ ] **04**: Projeto - [StarWars Datatable com Context API e Hooks]()
 
 #### Bloco 18: Projeto App de Receitas
