@@ -28,3 +28,6 @@
 [submodule "02-front-end/17-context-api-e-react-hooks/01-context-api-do-react/exercise-contextAPI-refactoring"]
 	path = 02-front-end/17-context-api-e-react-hooks/01-context-api-do-react/exercise-contextAPI-refactoring
 	url = https://github.com/gugadolzan/exercise-contextAPI-refactoring
+[submodule "02-front-end/17-context-api-e-react-hooks/02-react-hooks-usestate-e-usecontext/exercise-react-hooks-refactoring"]
+	path = 02-front-end/17-context-api-e-react-hooks/02-react-hooks-usestate-e-usecontext/exercise-react-hooks-refactoring
+	url = https://github.com/gugadolzan/exercise-react-hooks-refactoring
