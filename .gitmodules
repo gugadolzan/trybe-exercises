@@ -25,3 +25,6 @@
 [submodule "02-front-end/15-gerenciamento-de-estado-com-redux/04-usando-o-redux-no-react-actions-assincronas/exercise-game-of-thrones-characters"]
 	path = 02-front-end/15-gerenciamento-de-estado-com-redux/04-usando-o-redux-no-react-actions-assincronas/exercise-game-of-thrones-characters
 	url = https://github.com/gugadolzan/exercise-game-of-thrones-characters
+[submodule "02-front-end/17-context-api-e-react-hooks/01-context-api-do-react/exercise-contextAPI-refactoring"]
+	path = 02-front-end/17-context-api-e-react-hooks/01-context-api-do-react/exercise-contextAPI-refactoring
+	url = https://github.com/gugadolzan/exercise-contextAPI-refactoring
