@@ -146,7 +146,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 16: Projeto Jogo de Trivia
 
-- [X] **01**: Projeto - [Jogo de Trivia](https://github.com/tryber/sd-014-a-project-trybewallet/pull/121)
+- [X] **01**: Projeto - [Jogo de Trivia](https://github.com/tryber/sd-014-a-project-trivia-react-redux/pull/357)
 
 #### Bloco 17: Context API e React Hooks
 
