@@ -153,7 +153,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [X] **01**: Context API do React
 - [X] **02**: React Hooks - useState e useContextt
 - [X] **03**: React Hooks - useEffect e Hooks customizados
-- [ ] **04**: Projeto - [StarWars Datatable com Context API e Hooks]()
+- [X] **04**: Projeto - [StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-014-a-project-starwars-planets-search/pull/31)
 
 #### Bloco 18: Projeto App de Receitas
 
