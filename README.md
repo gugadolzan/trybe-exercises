@@ -20,153 +20,153 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 01: Unix & Bash
 
-- [X] **03**: Fundamentos do Desenvolvimento Web
-- [X] **03**: Introdução - Unix & Shell
-- [X] **03**: Unix & Bash - Parte 1
-- [X] **04**: Unix & Bash - Parte 2
+- [x] **03**: Fundamentos do Desenvolvimento Web
+- [x] **03**: Introdução - Unix & Shell
+- [x] **03**: Unix & Bash - Parte 1
+- [x] **04**: Unix & Bash - Parte 2
 
 #### Bloco 02: Git, GitHub e Internet
 
-- [X] **01**: Git & GitHub - O que é e para que serve
-- [X] **02**: Git & GitHub - Entendendo os comandos
-- [X] **03**: Internet - Entendendo como ela funciona
+- [x] **01**: Git & GitHub - O que é e para que serve
+- [x] **02**: Git & GitHub - Entendendo os comandos
+- [x] **03**: Internet - Entendendo como ela funciona
 
 #### Bloco 03: Introdução à HTML e CSS
 
-- [X] **01**: Introdução - HTML & CSS
-- [X] **01**: HTML & CSS - Estruturas de página
-- [X] **02**: HTML & CSS - Primeiros passos em CSS
-- [X] **03**: HTML & CSS - Seletores e posicionamento
-- [X] **04**: HTML Semântico
-- [X] **05**: Projeto - [Lessons Learned](https://github.com/tryber/sd-014-a-project-lessons-learned/pull/24) - [GitHub Pages](https://gugadolzan.github.io/projects/lessons-learned/)
+- [x] **01**: Introdução - HTML & CSS
+- [x] **01**: HTML & CSS - Estruturas de página
+- [x] **02**: HTML & CSS - Primeiros passos em CSS
+- [x] **03**: HTML & CSS - Seletores e posicionamento
+- [x] **04**: HTML Semântico
+- [x] **05**: Projeto - [Lessons Learned](https://github.com/tryber/sd-014-a-project-lessons-learned/pull/24) - [GitHub Pages](https://gugadolzan.github.io/projects/lessons-learned/)
 
 #### Bloco 04: Introdução à JavaScript e Lógica de Programação
 
-- [X] **01**: Introdução - JavaScript
-- [X] **01**: JavaScript - Primeiros passos
-- [X] **02**: JavaScript - Array e loop For
-- [X] **03**: JavaScript - Lógica de Programação e Algoritmos
-- [X] **04**: JavaScript - Objetos e funções
-- [X] **05**: Projeto - [Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
+- [x] **01**: Introdução - JavaScript
+- [x] **01**: JavaScript - Primeiros passos
+- [x] **02**: JavaScript - Array e loop For
+- [x] **03**: JavaScript - Lógica de Programação e Algoritmos
+- [x] **04**: JavaScript - Objetos e funções
+- [x] **05**: Projeto - [Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/25)
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
-- [X] **01**: JavaScript - DOM e seletores
-- [X] **02**: JavaScript - Trabalhando com elementos
-- [X] **03**: JavaScript - Eventos
-- [X] **04**: JavaScript - Web Storage
-- [X] **05**: Fundamentos - JavaScript - Projetos
-- [X] **05**: Projeto - [Arte com Pixels](https://github.com/tryber/sd-014-a-project-pixels-art/pull/25) - [GitHub Pages](https://gugadolzan.github.io/projects/pixels-art/)
-- [X] **06**: Projeto - [Lista de tarefas](https://github.com/tryber/sd-014-a-project-todo-list/pull/12) - [GitHub Pages](https://gugadolzan.github.io/projects/todo-list/)
-- [X] **07**: (Bônus) Projeto - [Carta Misteriosa](https://github.com/tryber/sd-014-a-project-mistery-letter/pull/15) - [GitHub Pages](https://gugadolzan.github.io/projects/mistery-letter/)
-- [X] **07**: (Bônus) Projeto - [Meme Generator](https://github.com/tryber/sd-014-a-project-meme-generator/pull/28) - [GitHub Pages](https://gugadolzan.github.io/projects/meme-generator/)
-- [X] **07**: (Bônus) Projeto - [Adivinhe a Cor](https://github.com/tryber/sd-014-a-project-color-guess/pull/37) - [GitHub Pages](https://gugadolzan.github.io/projects/color-guess/)
+- [x] **01**: JavaScript - DOM e seletores
+- [x] **02**: JavaScript - Trabalhando com elementos
+- [x] **03**: JavaScript - Eventos
+- [x] **04**: JavaScript - Web Storage
+- [x] **05**: Fundamentos - JavaScript - Projetos
+- [x] **05**: Projeto - [Arte com Pixels](https://github.com/tryber/sd-014-a-project-pixels-art/pull/25) - [GitHub Pages](https://gugadolzan.github.io/projects/pixels-art/)
+- [x] **06**: Projeto - [Lista de tarefas](https://github.com/tryber/sd-014-a-project-todo-list/pull/12) - [GitHub Pages](https://gugadolzan.github.io/projects/todo-list/)
+- [x] **07**: (Bônus) Projeto - [Carta Misteriosa](https://github.com/tryber/sd-014-a-project-mistery-letter/pull/15) - [GitHub Pages](https://gugadolzan.github.io/projects/mistery-letter/)
+- [x] **07**: (Bônus) Projeto - [Meme Generator](https://github.com/tryber/sd-014-a-project-meme-generator/pull/28) - [GitHub Pages](https://gugadolzan.github.io/projects/meme-generator/)
+- [x] **07**: (Bônus) Projeto - [Adivinhe a Cor](https://github.com/tryber/sd-014-a-project-color-guess/pull/37) - [GitHub Pages](https://gugadolzan.github.io/projects/color-guess/)
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [X] **01**: HTML & CSS - Forms
-- [X] **02**: Bibliotecas JavaScript e Frameworks CSS
-- [X] **03**: Introdução - CSS Flexbox
-- [X] **03**: CSS Flexbox - Parte 1
-- [X] **04**: CSS Flexbox - Parte 2
-- [X] **05**: CSS Responsivo - Mobile First
-- [X] **06**: Projeto - [Trybewarts](https://github.com/tryber/sd-014-a-project-trybewarts/pull/33) - [GitHub Pages](https://gugadolzan.github.io/projects/trybewarts/)
+- [x] **01**: HTML & CSS - Forms
+- [x] **02**: Bibliotecas JavaScript e Frameworks CSS
+- [x] **03**: Introdução - CSS Flexbox
+- [x] **03**: CSS Flexbox - Parte 1
+- [x] **04**: CSS Flexbox - Parte 2
+- [x] **05**: CSS Responsivo - Mobile First
+- [x] **06**: Projeto - [Trybewarts](https://github.com/tryber/sd-014-a-project-trybewarts/pull/33) - [GitHub Pages](https://gugadolzan.github.io/projects/trybewarts/)
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
-- [X] **01**: JavaScript ES6 - let, const, arrow functions e template literals
-- [X] **02**: JavaScript ES6 - Objects
-- [X] **03**: Testes unitários em JavaScript
-- [X] **04**: Projeto - [JavaScript Testes Unitários](https://github.com/tryber/sd-014-a-project-js-unit-tests/pull/16)
+- [x] **01**: JavaScript ES6 - let, const, arrow functions e template literals
+- [x] **02**: JavaScript ES6 - Objects
+- [x] **03**: Testes unitários em JavaScript
+- [x] **04**: Projeto - [JavaScript Testes Unitários](https://github.com/tryber/sd-014-a-project-js-unit-tests/pull/16)
 
 #### Bloco 08: Higher Order Functions do JavaScript ES6
 
-- [X] **01**: JavaScript ES6 - Introdução a Higher Order Functions
-- [X] **02**: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [X] **03**: JavaScript ES6 - Higher Order Functions - map e filter
-- [X] **04**: JavaScript ES6 - Higher Order Functions - reduce
-- [X] **05**: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [X] **06**: Projeto - [Zoo functions](https://github.com/tryber/sd-014-a-project-zoo-functions/pull/19)
+- [x] **01**: JavaScript ES6 - Introdução a Higher Order Functions
+- [x] **02**: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] **03**: JavaScript ES6 - Higher Order Functions - map e filter
+- [x] **04**: JavaScript ES6 - Higher Order Functions - reduce
+- [x] **05**: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+- [x] **06**: Projeto - [Zoo functions](https://github.com/tryber/sd-014-a-project-zoo-functions/pull/19)
 
 #### Bloco 09: JavaScript Assíncrono e Promises
 
-- [X] **01**: JavaScript JavaScript Assíncrono e Callbacks
-- [X] **02**: JavaScript Promises
-- [X] **03**: Projeto - [Carrinho de Compras](https://github.com/tryber/sd-014-a-project-shopping-cart/pull/5)
+- [x] **01**: JavaScript JavaScript Assíncrono e Callbacks
+- [x] **02**: JavaScript Promises
+- [x] **03**: Projeto - [Carrinho de Compras](https://github.com/tryber/sd-014-a-project-shopping-cart/pull/5)
 
 #### Bloco 10: Testes automatizados com Jest
 
-- [X] **01**: Primeiros passos no Jest
-- [X] **02**: Jest - Testes Assíncronos
-- [X] **03**: Jest - Simulando comportamentos
-- [X] **04**: Projeto - [Jest Assíncrono e Mocking](https://github.com/tryber/sd-014-a-project-jest/pull/42)
+- [x] **01**: Primeiros passos no Jest
+- [x] **02**: Jest - Testes Assíncronos
+- [x] **03**: Jest - Simulando comportamentos
+- [x] **04**: Projeto - [Jest Assíncrono e Mocking](https://github.com/tryber/sd-014-a-project-jest/pull/42)
 
 ## Desenvolvimento Front-end
 
 #### Bloco 11: Introdução à React
 
-- [X] **01**: Introdução - Front-end
-- [X] **01**: Introdução - React
-- [X] **01**: 'Hello, world!' no React!
-- [X] **02**: Componentes React
-- [X] **03**: Projeto - [Movie Cards Library](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/5) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library/)
+- [x] **01**: Introdução - Front-end
+- [x] **01**: Introdução - React
+- [x] **01**: 'Hello, world!' no React!
+- [x] **02**: Componentes React
+- [x] **03**: Projeto - [Movie Cards Library](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/5) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library/)
 
 #### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
-- [X] **01**: Componentes com estado e eventos
-- [X] **02**: Formulários no React
-- [X] **03**: Projeto - [Movie Cards Library Stateful](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/47) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library-stateful/)
+- [x] **01**: Componentes com estado e eventos
+- [x] **02**: Formulários no React
+- [x] **03**: Projeto - [Movie Cards Library Stateful](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/47) - [GitHub Pages](https://gugadolzan.github.io/movie-cards-library-stateful/)
 
 #### Bloco 13: Ciclo de Vida de Componentes e React Router
 
-- [X] **01**: Ciclo de vida de componentes
-- [X] **02**: React Router
-- [X] **03**: Projeto - [TrybeTunes](https://github.com/tryber/sd-014-a-project-trybetunes/pull/67) - [GitHub Pages](https://gugadolzan.github.io/trybetunes/)
+- [x] **01**: Ciclo de vida de componentes
+- [x] **02**: React Router
+- [x] **03**: Projeto - [TrybeTunes](https://github.com/tryber/sd-014-a-project-trybetunes/pull/67) - [GitHub Pages](https://gugadolzan.github.io/trybetunes/)
 
 #### Bloco 14: Metodologias Ágeis
 
-- [X] **01**: Metodologias Ágeis
-- [X] **02**: Projeto - [Frontend Online Store](https://github.com/tryber/sd-014-a-project-frontend-online-store/pull/492)
+- [x] **01**: Metodologias Ágeis
+- [x] **02**: Projeto - [Frontend Online Store](https://github.com/tryber/sd-014-a-project-frontend-online-store/pull/492)
 
 #### Bloco 15: Testes automatizados com React Testing Library
 
-- [X] **01**: RTL - Primeiros passos
-- [X] **02**: RTL - Mocks e Inputs
-- [X] **03**: RTL - Testando React Router
-- [X] **04**: Projeto - [Testes em React](https://github.com/tryber/sd-014-a-project-react-testing-library/pull/119)
+- [x] **01**: RTL - Primeiros passos
+- [x] **02**: RTL - Mocks e Inputs
+- [x] **03**: RTL - Testando React Router
+- [x] **04**: Projeto - [Testes em React](https://github.com/tryber/sd-014-a-project-react-testing-library/pull/119)
 
 #### Bloco 15 Redux: Gerenciamento de estado com Redux
 
-- [X] **01**: Introdução ao Redux - O estado global da aplicação
-- [X] **02**: Usando o Redux no React
-- [X] **03**: Usando o Redux no React - Prática
-- [X] **04**: Usando o Redux no React - Actions Assíncronas
-- [X] **05**: Testes em React-Redux
-- [X] **06**: Projeto - [Trybe Wallet](https://github.com/tryber/sd-014-a-project-trybewallet/pull/121)
+- [x] **01**: Introdução ao Redux - O estado global da aplicação
+- [x] **02**: Usando o Redux no React
+- [x] **03**: Usando o Redux no React - Prática
+- [x] **04**: Usando o Redux no React - Actions Assíncronas
+- [x] **05**: Testes em React-Redux
+- [x] **06**: Projeto - [Trybe Wallet](https://github.com/tryber/sd-014-a-project-trybewallet/pull/121)
 
 #### Bloco 16: Projeto Jogo de Trivia
 
-- [X] **01**: Projeto - [Jogo de Trivia](https://github.com/tryber/sd-014-a-project-trivia-react-redux/pull/357)
+- [x] **01**: Projeto - [Jogo de Trivia](https://github.com/tryber/sd-014-a-project-trivia-react-redux/pull/357)
 
 #### Bloco 17: Context API e React Hooks
 
-- [X] **01**: Context API do React
-- [X] **02**: React Hooks - useState e useContextt
-- [X] **03**: React Hooks - useEffect e Hooks customizados
-- [X] **04**: Projeto - [StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-014-a-project-starwars-planets-search/pull/31)
+- [x] **01**: Context API do React
+- [x] **02**: React Hooks - useState e useContextt
+- [x] **03**: React Hooks - useEffect e Hooks customizados
+- [x] **04**: Projeto - [StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-014-a-project-starwars-planets-search/pull/31)
 
 #### Bloco 18: Projeto App de Receitas
 
-- [ ] **01**: Projeto - [App de Receitas]()
+- [x] **01**: Projeto - [App de Receitas](https://github.com/tryber/sd-014-a-project-recipes-app/pull/686)
 
 ## Desenvolvimento Back-end
 
 #### Bloco 19: Introdução à SQL
 
-- [ ] **01**: Introdução - Back-end
-- [ ] **01**: Introdução - Bancos de dados relacionais
-- [ ] **01**: Banco de dados SQL
-- [ ] **02**: Encontrando dados em um banco de dados
+- [x] **01**: Introdução - Back-end
+- [x] **01**: Introdução - Bancos de dados relacionais
+- [x] **01**: Banco de dados SQL
+- [x] **02**: Encontrando dados em um banco de dados
 - [ ] **03**: Filtrando dados de forma específica
 - [ ] **04**: Manipulando tabelas
 - [ ] **05**: Projeto - [All For One]()
@@ -302,3 +302,4 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [ ] **02**: Deque
 - [ ] **03**: Pilhas
 - [ ] **04**: Projeto - [TING - Trybe Is Not Google]()
+
