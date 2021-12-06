@@ -17,3 +17,4 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
 12.  **Remova somente o  `container`  criado para esse exercício** ;
 13.  _(Bônus)_ **Crie e rode de modo interativo em modo 'Cleanup'** , a imagem  `andrius/ascii-patrol`  ;
 14.  _(Bônus)_ **Encerre o  `container`  utilizando os botões [  `ctrl`  ] + [  `c`  ].**
+
