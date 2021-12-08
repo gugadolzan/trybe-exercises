@@ -161,61 +161,41 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 ## Desenvolvimento Back-end
 
-#### Bloco 19: Introdução à SQL
+#### Bloco 19: Docker: Utilizando Containers
 
 - [x] **01**: Introdução - Back-end
-- [x] **01**: Introdução - Bancos de dados relacionais
-- [x] **01**: Banco de dados SQL
-- [x] **02**: Encontrando dados em um banco de dados
+- [x] **01**: Utilizando Containers - Docker
+- [x] **02**: Manipulação e Criação de Imagens no Docker
+- [ ] **03**: Orquestrando Containers com Docker Compose
+- [x] **04**: Projeto - [Docker Todo-List](https://github.com/tryber/sd-014-a-project-docker-todo-list/pull/123)
+
+#### Bloco 20: Introdução à SQL
+
+- [ ] **01**: Introdução - Bancos de dados relacionais
+- [ ] **01**: Banco de dados SQL
+- [ ] **02**: Encontrando dados em um banco de dados
 - [ ] **03**: Filtrando dados de forma específica
 - [ ] **04**: Manipulando tabelas
 - [ ] **05**: Projeto - [All For One]()
 
-#### Bloco 20: Funções SQL, Joins e Subqueries
+#### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [ ] **01**: Funções mais usadas no SQL
-- [ ] **02**: Descomplicando JOINs, UNIONs e Subqueries
-- [ ] **03**: Stored Routines & Stored Functions
-- [ ] **04**: Projeto - [Vocabulary Booster]()
+- [ ] **02**: Descomplicando JOINs
+- [ ] **03**: Transformando ideias em um modelo de banco de dados
+- [ ] **04**: Projeto - [One For All]()
 
-#### Bloco 21: Normalização e Modelagem de Banco de Dados
-
-- [ ] **01**: Transformando ideias em um modelo de banco de dados - Parte 1
-- [ ] **02**: Normalização, Formas Normais e Dumps
-- [ ] **02**: Transformando ideias em um modelo de banco de dados - Parte 2
-- [ ] **03**: Projeto - [One For All]()
-
-#### Bloco 22: Introdução ao MongoDB
-
-- [ ] **01**: Introdução - NoSQL
-- [ ] **01**: MongoDB - Introdução
-- [ ] **02**: Filter Operators
-- [ ] **03**: Projeto - [Data Flights]()
-
-#### Bloco 23: MongoDB: Updates Simples e Complexos
-
-- [ ] **01**: Updates Simples
-- [ ] **02**: Updates Complexos - Arrays - Parte 1
-- [ ] **03**: Updates Complexos - Arrays - Parte 2
-- [ ] **04**: Projeto - [Commerce]()
-
-#### Bloco 24: MongoDB: Aggregation Framework
-
-- [ ] **01**: Aggregation Framework - Parte 1
-- [ ] **02**: Aggregation Framework - Part 2
-- [ ] **03**: Projeto - [Aggregations]()
-
-#### Bloco 25: Introdução ao desenvolvimento Web com Node.js
+#### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
 - [ ] **01**: Intro - Node.js
-- [ ] **01**: Node.js - Introdução
+- [ ] **01**: Node.js - Um motor JavaScript
 - [ ] **02**: Node.js - Fluxo Assíncrono
-- [ ] **03**: Testes com Node.js
-- [ ] **04**: Express: HTTP com Node.js
-- [ ] **05**: Praticando Express
+- [ ] **03**: Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [ ] **04**: Express - HTTP com Node.js
+- [ ] **05**: Express - Middlewares
 - [ ] **06**: Projeto - [Talker Manager]()
 
-#### Bloco 26: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+#### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
 - [ ] **01**: Introdução - Arquitetura de Software
 - [ ] **01**: Arquitetura de Software - Camada de Model
@@ -224,56 +204,74 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [ ] **04**: Arquitetura de Software - Testando as Camadas
 - [ ] **05**: Projeto - [Store Manager]()
 
-#### Bloco 27: Autenticação e Upload de Arquivos
+#### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] **01**: Node.js - JWT - (JSON Web Token)
-- [ ] **02**: Node.js - Upload de arquivos com `multer`
-- [ ] **03**: Node.js - Testando APIs com Testes de Integração
-- [ ] **04**: Projeto - [Cookmaster]()
+- [ ] **01**: Introdução - Node.js: ORM e Autenticação
+- [ ] **01**: ORM - Interface da aplicação com o banco de dados
+- [ ] **02**: ORM - Associations
+- [ ] **03**: JWT - (JSON Web Token)
+- [ ] **04**: Testando APIs com Testes de Integração
+- [ ] **05**: Projeto - [API de Blogs]()
 
-#### Bloco 28: Deployment
+#### Bloco 25: Deployment
 
 - [ ] **01**: Introdução - Deploy
 - [ ] **01**: Infraestrutura - Deploy com Heroku
-- [ ] **02**: Deploy - Gerenciadores de Processos
+- [ ] **02**: Deploy Docker & Heroku
 - [ ] **03**: Projeto - [Stranger Things]()
 
-#### Bloco 29: Arquitetura: SOLID e ORM
+#### Bloco 26: TypeScript
+- [ ] **01**: Introdução - TypeScript
+- [ ] **01**: Introdução ao TypeScript
+- [ ] **02**: Tipagem Estática e Generics
+- [ ] **03**: Express com TypeScript
+- [ ] **04**: Projeto - [Trybe Smith]()
 
-- [ ] **01**: Arquitetura - Princípios SOLID
-- [ ] **02**: ORM - Interface da aplicação com o banco de dados
-- [ ] **03**: ORM - Associations
-- [ ] **04**: Projeto - [API de Blogs]()
+#### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-#### Bloco 30: Sockets
+- [ ] **01**: Introdução à Orientação a Objetos
+- [ ] **02**: Herança e Interfaces
+- [ ] **03**: Polimorfismo
+- [ ] **04**: SOLID - Introdução
+- [ ] **05**: SOLID - Continuação
+- [ ] **06**: Projeto - [Trybers and Dragons]()
 
-- [ ] **01**: Arquitetura de Software - Camada de View
-- [ ] **02**: Sockets - TCP/UDP & NET
-- [ ] **03**: Sockets - Socket.io
-- [ ] **04**: Sockets - Praticando Socket.io
-- [ ] **05**: Projeto - [Webchat]()
+#### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-#### Bloco 31: Projeto Trybeer
+- [ ] **01**: Projeto - [TFC - Trybe Futebol Clube]()
 
-- [ ] **01**: Projeto - [Trybeer]()
+#### Bloco 29: Introdução ao MongoDB
+
+- [ ] **01**: Introdução - NoSQL
+- [ ] **01**: MongoDB - Introdução
+- [ ] **02**: Filter Operators
+- [ ] **03**: Projeto - [Data Flights]()
+
+#### Bloco 30: MongoDB: Updates Simples e Complexos
+
+- [ ] **01**: Updates Simples
+- [ ] **02**: Updates Complexos - Arrays - Parte 1
+- [ ] **03**: Updates Complexos - Arrays - Parte 2
+- [ ] **04**: Projeto - [Commerce]()
+
+#### Bloco 31: MasterClass - VPS, CI/CD
+
+- [ ] **01**: Dia 1
+- [ ] **02**: Dia 2
+
+#### Bloco 32: Projeto - App de Delivery
+
+- [ ] **01**: Projeto - [App de Delivery]()
 
 ## Ciência da Computação
 
-#### Bloco 32: Arquitetura de Computadores e Redes
+#### Bloco 33: Introdução à Python
 
 - [ ] **01**: Introdução - Ciência da Computação
-- [ ] **01**: Arquitetura de Computadores
-- [ ] **02**: Arquitetura de redes
-- [ ] **03**: Redes de computadores, ferramentas e segurança
-- [ ] **04**: Projeto - [Explorando os protocolos]()
-
-#### Bloco 33: Introdução à Python e Raspagem de Dados da Web
-
 - [ ] **01**: Aprendendo Python
 - [ ] **02**: Entrada e Saída de Dados
-- [ ] **03**: Raspagem de Dados
-- [ ] **04**: Testes
-- [ ] **05**: Projeto - [Tech news]()
+- [ ] **03**: Testes
+- [ ] **04**: Projeto - [Job Insights]()
 
 #### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
@@ -282,24 +280,32 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [ ] **03**: Padrões de projeto
 - [ ] **04**: Projeto - [Relatórios de Estoque]()
 
-#### Bloco 35: Algoritmos e Estrutura de Dados
+#### Bloco 35: Redes e Raspagem de Dados
+
+- [ ] **01**: Arquitetura de redes
+- [ ] **02**: Redes de computadores, ferramentas e segurança
+- [ ] **03**: Raspagem de Dados
+- [ ] **04**: Projeto - [Tech news]()
+
+#### Bloco 36: Algoritmos
 
 - [ ] **01**: Complexidade de Algoritmos
 - [ ] **02**: Recursividade e Estratégias para solução de problemas
 - [ ] **03**: Algoritmos de ordenação e busca
 - [ ] **04**: Projeto - [Algoritmos]()
 
-#### Bloco 36: Estrutura de Dados: Hash e Set
+#### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
-- [ ] **01**: Arrays
-- [ ] **02**: Hashmap e Dict
-- [ ] **03**: Set
-- [ ] **03**: Projeto - [Restaurant Orders]()
+- [ ] **01**: Arquitetura de Computadores
+- [ ] **02**: Arrays
+- [ ] **03**: Hashmap e Dict
+- [ ] **04**: Set
+- [ ] **05**: Projeto - [Restaurant Orders]()
 
-#### Bloco 37: Estrutura de Dados: Pilhas, Filas e Listas
+#### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
 
 - [ ] **01**: Nó e Listas Encadeadas
-- [ ] **02**: Deque
-- [ ] **03**: Pilhas
-- [ ] **04**: Projeto - [TING - Trybe Is Not Google]()
+- [ ] **02**: Pilhas e Filas
+- [ ] **03**: Projeto - [TING - Trybe Is Not Google]()
+
 
