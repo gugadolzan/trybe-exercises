@@ -75,7 +75,7 @@ INSERT INTO Scientists(SSN,Name)
     (332569843, 'AeH4');
 ```
 
-> Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos  [deste link](https://creativecommons.org/licenses/by-sa/3.0/).
+> Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos [deste link](https://creativecommons.org/licenses/by-sa/3.0/).
 
 1.  Escreva uma query para exibir a string "This is SQL Exercise, Practice and Solution".
 2.  Escreva uma query para exibir três números em três colunas.
@@ -85,14 +85,13 @@ INSERT INTO Scientists(SSN,Name)
 6.  Escreva uma query para exibir o nome como "Nome do Projeto" e as horas como "Tempo de Trabalho" de cada projeto.
 7.  Escreva uma query para exibir o nome dos cientistas em ordem alfabética.
 8.  Escreva uma query para exibir o nome dos Projetos em ordem alfabética descendente.
-9.  Escreva uma query que exiba a string "O projeto  `Name`  precisou de  `Hours`  horas para ser concluído." para cada projeto.
-10.  Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
-11.  Escreva uma query para exibir o código de todos os projetos da tabela  `AssignedTo`  sem que haja repetições.
-12.  Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
-13.  Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
-14.  Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
-15.  Escreva uma query que exiba a string "Existem  `Number`  cientistas na tabela Scientists.", em que  `Number`  se refira a quantidade de cientistas.
-
+9.  Escreva uma query que exiba a string "O projeto `Name` precisou de `Hours` horas para ser concluído." para cada projeto.
+10. Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
+11. Escreva uma query para exibir o código de todos os projetos da tabela `AssignedTo` sem que haja repetições.
+12. Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
+13. Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
+14. Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
+15. Escreva uma query que exiba a string "Existem `Number` cientistas na tabela Scientists.", em que `Number` se refira a quantidade de cientistas.
 
 ### Bônus
 
@@ -145,18 +144,18 @@ INSERT INTO Provides(Piece, Provider, Price)
     (4, 'RBT', 7);
 ```
 
-> Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos  [deste link](https://creativecommons.org/licenses/by-sa/3.0/).
+> Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos [deste link](https://creativecommons.org/licenses/by-sa/3.0/).
 
-1.  Escreva uma query para exibir a peça e o preço de tudo que é provido pela empresa  `RBT`.
+1.  Escreva uma query para exibir a peça e o preço de tudo que é provido pela empresa `RBT`.
 2.  Escreve uma query para exibir todas as informações das cinco peças com os maiores preços.
 3.  Escreva uma query para exibir o nome das empresas e preço das peças com os quatro maiores preços, começando a lista a partir do 3º item.
-4.  Escreva uma query para exibir todas as informações das peças que são providas pela empresa  `HAL`. Ordene o resultado pelos preços das peças de forma decrescente.
-5.  Escreva uma query para exibir por quantas empresas a peça  `1`  é provida.
+4.  Escreva uma query para exibir todas as informações das peças que são providas pela empresa `HAL`. Ordene o resultado pelos preços das peças de forma decrescente.
+5.  Escreva uma query para exibir por quantas empresas a peça `1` é provida.
 
-**Exercício 7**: Usando  `WHERE`  , faça os exercícios  [deste link](https://www.w3schools.com/sql/exercise.asp?filename=exercise_where1).
+**Exercício 7**: Usando `WHERE` , faça os exercícios [deste link](https://www.w3schools.com/sql/exercise.asp?filename=exercise_where1).
 
-**Exercício 8**: Aplicando Restrições, faça os exercícios  [deste link](https://sqlbolt.com/lesson/select_queries_with_constraints).
+**Exercício 8**: Aplicando Restrições, faça os exercícios [deste link](https://sqlbolt.com/lesson/select_queries_with_constraints).
 
-**Exercícios 9**: Estude e faça os exercícios das páginas 1 a 3  [deste link](http://www.sqlcourse.com/intro.html).
+**Exercícios 9**: Estude e faça os exercícios das páginas 1 a 3 [deste link](http://www.sqlcourse.com/intro.html).
 
-**Exercício 10**: Exercícios de comparação de valores. Faça os exercícios  [deste link](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial).
+**Exercício 10**: Exercícios de comparação de valores. Faça os exercícios [deste link](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial).
