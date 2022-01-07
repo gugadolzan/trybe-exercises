@@ -166,17 +166,17 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [x] **01**: Introdução - Back-end
 - [x] **01**: Utilizando Containers - Docker
 - [x] **02**: Manipulação e Criação de Imagens no Docker
-- [ ] **03**: Orquestrando Containers com Docker Compose
+- [x] **03**: Orquestrando Containers com Docker Compose
 - [x] **04**: Projeto - [Docker Todo-List](https://github.com/tryber/sd-014-a-project-docker-todo-list/pull/123)
 
 #### Bloco 20: Introdução à SQL
 
-- [ ] **01**: Introdução - Bancos de dados relacionais
-- [ ] **01**: Banco de dados SQL
-- [ ] **02**: Encontrando dados em um banco de dados
-- [ ] **03**: Filtrando dados de forma específica
-- [ ] **04**: Manipulando tabelas
-- [ ] **05**: Projeto - [All For One]()
+- [x] **01**: Introdução - Bancos de dados relacionais
+- [x] **01**: Banco de dados SQL
+- [x] **02**: Encontrando dados em um banco de dados
+- [x] **03**: Filtrando dados de forma específica
+- [x] **04**: Manipulando tabelas
+- [x] **05**: Projeto - [All For One](https://github.com/tryber/sd-014-a-mysql-all-for-one/pull/109)
 
 #### Bloco 21: Funções SQL, JOINs e Normalização
 
