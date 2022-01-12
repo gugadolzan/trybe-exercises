@@ -181,7 +181,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [x] **01**: Funções mais usadas no SQL
-- [ ] **02**: Descomplicando JOINs
+- [x] **02**: Descomplicando JOINs
 - [ ] **03**: Transformando ideias em um modelo de banco de dados
 - [ ] **04**: Projeto - [One For All]()
 
