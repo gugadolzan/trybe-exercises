@@ -182,8 +182,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 - [x] **01**: Funções mais usadas no SQL
 - [x] **02**: Descomplicando JOINs
-- [ ] **03**: Transformando ideias em um modelo de banco de dados
-- [ ] **04**: Projeto - [One For All]()
+- [x] **03**: Transformando ideias em um modelo de banco de dados
+- [x] **04**: Projeto - [One For All](https://github.com/tryber/sd-014-a-mysql-one-for-all/pull/108)
 
 #### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
