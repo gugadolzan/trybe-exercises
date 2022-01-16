@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 /**
- * Retorna a situação do IMC
+ * @description Retorna a situação do IMC
  * @param {number} imc
  * @returns {string}
  */
