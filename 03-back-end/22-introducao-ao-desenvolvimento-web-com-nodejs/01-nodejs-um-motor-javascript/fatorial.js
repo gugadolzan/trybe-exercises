@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 /**
- * Calcula o fatorial de um número
+ * @description Calcula fatorial
  */
 const fatorial = () => {
   let numero = readline.questionInt('Digite um número: ');

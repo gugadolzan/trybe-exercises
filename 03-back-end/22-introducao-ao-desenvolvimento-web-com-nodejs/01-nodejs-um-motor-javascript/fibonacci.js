@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 /**
- * Exibe o valor dos n primeiros elementos da sequência de fibonacci
+ * @description Exibe n números dlet numeros = readline.questionInt('Digite um número: ');e fibonacci
  */
 const fibonacci = () => {
   let numeros = readline.questionInt('Digite um número: ');

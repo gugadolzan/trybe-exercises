@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 /**
- * @description Função que gera um número aleatório entre 0 e 10 e retorna o resultado
+ * @description Jogo de adivinhação
  */
 const sorteio = () => {
   const numero = readline.questionInt('Digite um número entre 1 e 10: ');
@@ -14,7 +14,10 @@ const sorteio = () => {
 
   console.log(resultado);
 
-  const continuar = readline.question('Deseja continuar? (s/n) ');
+  const continuar = readline.question(
+    'Deseja continuar? (Digite s para sim, e qualquer outra coisa para não) '
+  );
+
   if (continuar !== 's') return;
 
   sorteio();

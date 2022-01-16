@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 /**
- * @description Calcula a velocidade média
+ * @description Calcula velocidade média
  */
 const velocidadeMedia = () => {
   const distancia = readline.questionInt('Qual a distância percorrida (em metros)? ');
