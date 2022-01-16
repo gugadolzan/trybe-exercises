@@ -21,7 +21,6 @@ const situacaoIMC = (imc) => {
 
 /**
  * Calcula o IMC e retorna a situação
- * @returns {string}
  */
 const calculaIMC = () => {
   const peso = readline.questionFloat('Qual seu peso? ');
