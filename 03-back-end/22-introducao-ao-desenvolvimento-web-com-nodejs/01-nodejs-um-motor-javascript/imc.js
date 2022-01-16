@@ -33,8 +33,6 @@ const calculaIMC = () => {
 
   console.log(`IMC: ${imc}`);
   console.log(`Situação: ${situacaoIMC(Number(imc))}`);
-
-  return;
 };
 
 calculaIMC();

@@ -10,7 +10,6 @@ const velocidadeMedia = () => {
   const velocidadeMedia = distancia / tempo;
 
   console.log(`Velocidade média: ${velocidadeMedia.toFixed(2)} m/s`);
-  return;
 };
 
 velocidadeMedia();
