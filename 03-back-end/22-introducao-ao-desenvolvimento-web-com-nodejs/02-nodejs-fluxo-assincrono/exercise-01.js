@@ -36,8 +36,11 @@ const sum = (a, b, c) => {
 };
  */
 
-sum(1, 2, 3).then(console.log).catch(console.log);
+/* sum(1, 2, 3).then(console.log).catch(console.log);
 
 sum(1, 2, '3').then(console.log).catch(console.log);
 
 sum(100, 2, 3).then(console.log).catch(console.log);
+ */
+
+module.exports = sum;
