@@ -52,3 +52,20 @@ const getCharacterById = async (id) => {
     console.error(err);
   }
 };
+
+/**
+ * @description Altera o arquivo e retira os personagens com id 10 e 6.
+ */
+const removeCharacters = async () => {
+  try {
+    const fileContent = await fs.readFile(fileName);
+    const characters = JSON.parse(fileContent);
+    const newCharacters = characters.filter(
+      ({ id }) => id !== '10' && id !== '6'
+    );
+
+    fs.writeFile(fileName, JSON.stringify(newCharacters));
+  } catch (err) {
+    console.error(err);
+  }
+};
