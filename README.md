@@ -189,11 +189,11 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 - [x] **01**: Intro - Node.js
 - [x] **01**: Node.js - Um motor JavaScript
-- [ ] **02**: Node.js - Fluxo Assíncrono
-- [ ] **03**: Mocha, Chai e Sinon - Testes de Back-end com Node.js
-- [ ] **04**: Express - HTTP com Node.js
-- [ ] **05**: Express - Middlewares
-- [ ] **06**: Projeto - [Talker Manager]()
+- [x] **02**: Node.js - Fluxo Assíncrono
+- [x] **03**: Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [x] **04**: Express - HTTP com Node.js
+- [x] **05**: Express - Middlewares
+- [x] **06**: Projeto - [Talker Manager](https://github.com/tryber/sd-014-a-project-talker-manager/pull/99)
 
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
