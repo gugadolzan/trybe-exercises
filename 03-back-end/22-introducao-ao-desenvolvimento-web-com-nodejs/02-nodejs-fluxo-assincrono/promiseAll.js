@@ -1,5 +1,8 @@
 const fs = require('fs').promises;
 
+/**
+ * @description Lê e escreve vários arquivos ao mesmo tempo, utilizando Promise.all para manipulação
+ */
 async function arrayToFile() {
   const strings = ['Finalmente', 'estou', 'usando', 'Promise.all', '!'];
 
