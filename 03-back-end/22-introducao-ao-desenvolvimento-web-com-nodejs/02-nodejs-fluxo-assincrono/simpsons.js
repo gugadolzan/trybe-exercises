@@ -102,3 +102,22 @@ const addNelsonToFamily = async () => {
     console.error(err);
   }
 };
+
+/**
+ * @description Substitui o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json
+ */
+const replaceNelsonMuntz = async () => {
+  try {
+    const fileContent = await fs.readFile('simpsonFamily.json');
+    const characters = JSON.parse(fileContent);
+    const newCharacters = characters.map((character) =>
+      character.name === 'Nelson Muntz'
+        ? { id: character.id, name: 'Maggie Simpson' }
+        : character
+    );
+
+    await fs.writeFile('simpsonFamily.json', JSON.stringify(newCharacters));
+  } catch (err) {
+    console.error(err);
+  }
+};
