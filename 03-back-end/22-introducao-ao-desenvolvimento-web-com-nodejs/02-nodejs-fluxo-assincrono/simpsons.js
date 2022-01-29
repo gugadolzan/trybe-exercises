@@ -54,7 +54,7 @@ const getCharacterById = async (id) => {
 };
 
 /**
- * @description Altera o arquivo e retira os personagens com id 10 e 6.
+ * @description Altera o arquivo e retira os personagens com id 10 e 6
  */
 const removeCharacters = async () => {
   try {
@@ -64,7 +64,22 @@ const removeCharacters = async () => {
       ({ id }) => id !== '10' && id !== '6'
     );
 
-    fs.writeFile(fileName, JSON.stringify(newCharacters));
+    await fs.writeFile(fileName, JSON.stringify(newCharacters));
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+/**
+ * @description Lê o arquivo simpsons.json e crie um novo arquivo, chamado simpsonFamily.json, contendo os personagens com id de 1 a 4
+ */
+const createSimpsonFamily = async () => {
+  try {
+    const fileContent = await fs.readFile(fileName);
+    const characters = JSON.parse(fileContent);
+    const simpsonFamily = characters.filter(({ id }) => id < 5);
+
+    await fs.writeFile('simpsonFamily.json', JSON.stringify(simpsonFamily));
   } catch (err) {
     console.error(err);
   }
