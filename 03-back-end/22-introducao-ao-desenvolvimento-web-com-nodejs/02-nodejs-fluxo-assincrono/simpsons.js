@@ -84,3 +84,21 @@ const createSimpsonFamily = async () => {
     console.error(err);
   }
 };
+
+/**
+ * @description Adiciona ao arquivo simpsonFamily.json o personagem Nelson Muntz
+ */
+const addNelsonToFamily = async () => {
+  try {
+    const fileContent = await fs.readFile('simpsonFamily.json');
+    const characters = JSON.parse(fileContent);
+    characters.push({
+      id: String(characters.length + 1),
+      name: 'Nelson Muntz',
+    });
+
+    await fs.writeFile('simpsonFamily.json', JSON.stringify(characters));
+  } catch (err) {
+    console.error(err);
+  }
+};
