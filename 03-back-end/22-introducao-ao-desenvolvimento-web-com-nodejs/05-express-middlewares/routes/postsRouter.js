@@ -14,6 +14,8 @@ const posts = [
   { id: 3, author: 'Rodrigo Garga', comment: 'To aqui também' },
 ];
 
+router.get('/', (_req, res) => res.status(HTTP_STATUS_OK).json(posts));
+
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   const post = posts.find((post) => `${post.id}` === id);
