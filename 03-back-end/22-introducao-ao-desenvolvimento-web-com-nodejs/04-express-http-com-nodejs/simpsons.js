@@ -1,13 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { readSimpsons, writeSimpsons } = require('./simpsons-utils');
+const authMiddleware = require('./authMiddleware');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(authMiddleware);
 
 const PORT = 3000;
 const HTTP_STATUS_OK = 200;
-const FILE_NAME = 'simpsons.json';
 
 app.get('/simpsons', async (_req, res) => {
   const simpsons = await readSimpsons();
@@ -42,7 +43,8 @@ app.post('/simpsons', async (req, res) => {
   res.status(204).end();
 });
 
-app.use(function (_err, _req, res, _next) {
+app.use(function (err, _req, res, _next) {
+  console.error(err.message);
   res.status(500).send('Something broke!');
 });
 

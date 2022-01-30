@@ -1,8 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const authMiddleware = require('./authMiddleware');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(authMiddleware);
 
 const PORT = 3000;
 
