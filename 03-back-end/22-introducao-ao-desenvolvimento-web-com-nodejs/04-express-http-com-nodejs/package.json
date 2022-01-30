@@ -1,0 +1,20 @@
+{
+  "name": "04-express-http-com-nodejs",
+  "version": "1.0.0",
+  "description": "Inicie os exercícios criando uma aplicação Node.js com os comandos já aprendidos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
