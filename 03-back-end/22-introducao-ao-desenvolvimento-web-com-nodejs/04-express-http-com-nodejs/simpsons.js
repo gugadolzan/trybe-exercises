@@ -14,6 +14,17 @@ app.get('/simpsons', async (_req, res) => {
   res.status(HTTP_STATUS_OK).json(simpsons);
 });
 
+app.get('/simpsons/:id', async (req, res) => {
+  const { id } = req.params;
+
+  const simpsons = await readSimpsons();
+  const simpson = simpsons.find((simpson) => simpson.id === id);
+
+  if (!simpson) return res.status(404).json({ message: 'Simpson not found' });
+
+  res.status(HTTP_STATUS_OK).json(simpson);
+});
+
 app.use(function (_err, _req, res, _next) {
   res.status(500).send('Something broke!');
 });
