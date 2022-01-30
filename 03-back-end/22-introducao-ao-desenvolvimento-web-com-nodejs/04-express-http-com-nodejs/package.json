@@ -1,7 +1,7 @@
 {
   "name": "04-express-http-com-nodejs",
   "version": "1.0.0",
-  "description": "Inicie os exercícios criando uma aplicação Node.js com os comandos já aprendidos.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
