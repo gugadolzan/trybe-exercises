@@ -18,6 +18,10 @@ app.post('/greetings', ({ body: { name, age } }, res) =>
     : res.status(401).json({ message: 'Unauthorized' })
 );
 
+app.put('/users/:name/:age', ({ params: { name, age } }, res) =>
+  res.json({ message: `Your name is ${name} and you are ${age} years old` })
+);
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
