@@ -1,11 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs').promises;
+const { readSimpsons, writeSimpsons } = require('./simpsons-utils');
 
 const app = express();
 app.use(bodyParser.json());
 
 const PORT = 3000;
+const HTTP_STATUS_OK = 200;
+const FILE_NAME = 'simpsons.json';
+
+app.get('/simpsons', async (_req, res) => {
+  const simpsons = await readSimpsons();
+  res.status(HTTP_STATUS_OK).json(simpsons);
+});
 
 app.use(function (_err, _req, res, _next) {
   res.status(500).send('Something broke!');
