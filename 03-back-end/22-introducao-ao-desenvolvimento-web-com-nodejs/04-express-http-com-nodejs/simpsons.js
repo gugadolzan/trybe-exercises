@@ -25,6 +25,23 @@ app.get('/simpsons/:id', async (req, res) => {
   res.status(HTTP_STATUS_OK).json(simpson);
 });
 
+app.post('/simpsons', async (req, res) => {
+  const { id, name } = req.body;
+
+  const simpsons = await readSimpsons();
+  const conflict = simpsons.some((simpson) => simpson.id === id);
+
+  if (conflict)
+    return res.status(409).json({ message: 'Simpson already exists' });
+
+  const newSimpson = { id, name };
+  simpsons.push(newSimpson);
+
+  await writeSimpsons(simpsons);
+
+  res.status(204).end();
+});
+
 app.use(function (_err, _req, res, _next) {
   res.status(500).send('Something broke!');
 });
