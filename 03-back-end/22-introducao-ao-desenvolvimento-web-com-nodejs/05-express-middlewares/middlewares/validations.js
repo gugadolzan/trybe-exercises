@@ -1,4 +1,9 @@
-const { HTTP_STATUS_BAD_REQUEST, MESSAGE_INVALID_DATA } = require('../utils');
+const {
+  HTTP_STATUS_BAD_REQUEST,
+  HTTP_STATUS_UNAUTHORIZED,
+  MESSAGE_INVALID_DATA,
+  MESSAGE_INVALID_TOKEN,
+} = require('../utils');
 
 const isValidUsername = (req, res, next) => {
   const { username } = req.body;
@@ -32,4 +37,19 @@ const isValidPassword = (req, res, next) => {
   next();
 };
 
-module.exports = { isValidUsername, isValidEmail, isValidPassword };
+const isValidToken = (req, res, next) => {
+  const token = req.headers.authorization;
+  const re = /^[a-zA-Z0-9]{12}$/;
+
+  if (!token || !re.test(token))
+    return res.status(HTTP_STATUS_UNAUTHORIZED).json(MESSAGE_INVALID_TOKEN);
+
+  next();
+};
+
+module.exports = {
+  isValidUsername,
+  isValidEmail,
+  isValidPassword,
+  isValidToken,
+};
