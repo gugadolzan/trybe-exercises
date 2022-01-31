@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const { btcRouter, postsRouter, userRouter } = require('./routes');
+const { btcRouter, postsRouter, teamsRouter, userRouter } = require('./routes');
 const { HTTP_STATUS_NOT_FOUND } = require('./utils');
 
 const app = express();
@@ -14,6 +14,8 @@ app.use('/user', userRouter);
 app.use('/btc', btcRouter);
 
 app.use('/posts', postsRouter);
+
+app.use('/teams', teamsRouter);
 
 app.use('*', (_req, _res, next) => {
   const err = {

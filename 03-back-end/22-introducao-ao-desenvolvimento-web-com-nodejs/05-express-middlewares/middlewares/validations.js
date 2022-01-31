@@ -47,9 +47,26 @@ const isValidToken = (req, res, next) => {
   next();
 };
 
+const isTeamValid = (req, res, next) => {
+  const { name, initials, country } = req.body;
+
+  if (
+    !name ||
+    name.length < 5 ||
+    !initials ||
+    initials.length > 3 ||
+    !country ||
+    country.length < 3
+  )
+    return res.status(HTTP_STATUS_BAD_REQUEST).json(MESSAGE_INVALID_DATA);
+
+  next();
+};
+
 module.exports = {
   isValidUsername,
   isValidEmail,
   isValidPassword,
   isValidToken,
+  isTeamValid,
 };
