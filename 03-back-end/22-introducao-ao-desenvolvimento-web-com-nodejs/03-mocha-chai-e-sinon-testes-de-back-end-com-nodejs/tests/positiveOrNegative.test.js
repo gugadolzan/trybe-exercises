@@ -18,6 +18,7 @@ describe('Test function positiveOrNegative', () => {
       });
     });
   });
+
   describe('when the parameter number is less than zero', () => {
     describe('the return', () => {
       it('should be a string', () => {
@@ -32,6 +33,7 @@ describe('Test function positiveOrNegative', () => {
       });
     });
   });
+
   describe('when the parameter number is zero', () => {
     describe('the return', () => {
       it('should be a string', () => {
@@ -46,6 +48,7 @@ describe('Test function positiveOrNegative', () => {
       });
     });
   });
+
   describe('when the parameter number is not a number', () => {
     describe('the return', () => {
       it('should be a string', () => {
