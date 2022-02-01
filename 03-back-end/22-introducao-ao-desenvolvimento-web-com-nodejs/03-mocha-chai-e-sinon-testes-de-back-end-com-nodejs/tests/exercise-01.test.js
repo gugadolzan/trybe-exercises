@@ -46,4 +46,18 @@ describe('Test function positiveOrNegative', () => {
       });
     });
   });
+  describe('when the parameter number is not a number', () => {
+    describe('the return', () => {
+      it('should be a string', () => {
+        const result = positiveOrNegative('1');
+
+        expect(result).to.be.a('string');
+      });
+      it('should be "value must be a number"', () => {
+        const result = positiveOrNegative('1');
+
+        expect(result).to.equal('value must be a number');
+      });
+    });
+  });
 });
