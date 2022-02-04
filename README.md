@@ -197,8 +197,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] **01**: Introdução - Arquitetura de Software
-- [ ] **01**: Arquitetura de Software - Camada de Model
+- [x] **01**: Introdução - Arquitetura de Software
+- [x] **01**: Arquitetura de Software - Camada de Model
 - [ ] **02**: Arquitetura de Software - Camada de Controller e Service
 - [ ] **03**: Arquitetura Web - Rest e Restful
 - [ ] **04**: Arquitetura de Software - Testando as Camadas
