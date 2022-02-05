@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const rescue = require('express-rescue');
 
-const UserModel = require('../models/UserModel');
+const UserModel = require('../models/user.model');
 
 const schema = Joi.object({
   firstName: Joi.string().required(),

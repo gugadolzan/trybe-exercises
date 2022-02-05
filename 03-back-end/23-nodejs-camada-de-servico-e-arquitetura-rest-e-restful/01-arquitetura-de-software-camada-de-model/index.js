@@ -3,22 +3,14 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const {
-  createUser,
-  error,
-  findByIdUser,
-  getAllUser,
-} = require('./middlewares');
+const { error } = require('./middlewares');
+const { UserRouter } = require('./routes');
 
 const app = express();
 
 app.use(bodyParser.json());
 
-app.post('/user', createUser);
-
-app.get('/user', getAllUser);
-
-app.get('/user/:id', findByIdUser);
+app.use('/user', UserRouter);
 
 app.use(error);
 

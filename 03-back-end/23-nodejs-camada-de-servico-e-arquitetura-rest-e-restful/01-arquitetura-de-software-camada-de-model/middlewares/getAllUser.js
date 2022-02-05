@@ -1,6 +1,6 @@
 const rescue = require('express-rescue');
 
-const UserModel = require('../models/UserModel');
+const UserModel = require('../models/user.model');
 
 module.exports = rescue(async (_req, res) => {
   const users = await UserModel.getAll();
