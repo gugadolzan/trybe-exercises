@@ -3,13 +3,15 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const { createUser, error } = require('./middlewares');
+const { createUser, getAllUser, error } = require('./middlewares');
 
 const app = express();
 
 app.use(bodyParser.json());
 
 app.post('/user', createUser);
+
+app.get('/user', getAllUser);
 
 app.use(error);
 

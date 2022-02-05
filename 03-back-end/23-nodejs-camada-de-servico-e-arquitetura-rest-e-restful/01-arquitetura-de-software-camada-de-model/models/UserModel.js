@@ -1,6 +1,6 @@
 const connection = require('./connection');
 
-function create({ firstName, lastName, email, password }) {
+const create = ({ firstName, lastName, email, password }) => {
   const query = `
     INSERT INTO users (first_name, last_name, email, password)
     VALUES (?, ?, ?, ?)
@@ -9,8 +9,17 @@ function create({ firstName, lastName, email, password }) {
   return connection
     .execute(query, [firstName, lastName, email, password])
     .then(([result]) => ({ id: result.insertId, firstName, lastName, email }));
-}
+};
+
+const getAll = () => {
+  const query = `
+    SELECT * FROM users
+  `;
+
+  return connection.execute(query).then(([rows]) => rows);
+};
 
 module.exports = {
   create,
+  getAll,
 };
