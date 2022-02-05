@@ -1,16 +1,13 @@
-module.exports = (err, _req, res, _next) => {
-  if (err.status)
-    return res.status(err.status).json({
-      error: true,
-      message: err.message,
-    });
+module.exports = (err, req, res, next) => {
+  const status = err.status || 500;
+  const message = err.message || 'Internal server error';
 
-  if (err.isJoi)
-    return res
-      .status(400)
-      .send({ error: true, message: err.details[0].message });
+  if (status === 500) {
+    console.error(err);
+  }
 
-  console.error(err);
-
-  res.status(500).send({ error: true, message: 'Internal server error' });
+  res.status(status).json({
+    error: true,
+    message,
+  });
 };

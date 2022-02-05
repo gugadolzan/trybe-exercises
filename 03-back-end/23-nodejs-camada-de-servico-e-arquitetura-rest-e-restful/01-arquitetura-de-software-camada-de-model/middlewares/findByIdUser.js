@@ -7,11 +7,11 @@ module.exports = rescue(async (req, res, next) => {
 
   const user = await UserModel.findById(id);
 
-  if (!user)
-    return next({
-      status: 404,
-      message: 'User not found',
-    });
+  if (!user) {
+    const err = new Error('User not found');
+    err.status = 404;
+    return next(err);
+  }
 
   res.status(200).json(user);
 });

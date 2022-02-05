@@ -21,7 +21,11 @@ module.exports = rescue(async (req, res, next) => {
 
   const { error } = schema.validate({ firstName, lastName, email, password });
 
-  if (error) return next(error);
+  if (error) {
+    const err = new Error(error.details[0].message);
+    err.status = 400;
+    return next(err);
+  }
 
   const createdUser = await UserModel.create({
     firstName,
