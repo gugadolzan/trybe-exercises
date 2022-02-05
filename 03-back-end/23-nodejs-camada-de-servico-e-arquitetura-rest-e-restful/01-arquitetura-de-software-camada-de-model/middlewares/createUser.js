@@ -1,6 +1,8 @@
 const Joi = require('joi');
 const rescue = require('express-rescue');
 
+const UserModel = require('../models/UserModel');
+
 const schema = Joi.object({
   firstName: Joi.string().required(),
   lastName: Joi.string().required(),
@@ -14,14 +16,19 @@ const schema = Joi.object({
   'any.required': `{#label} is a required field`,
 });
 
-module.exports = rescue((req, res) => {
+module.exports = rescue(async (req, res, next) => {
   const { firstName, lastName, email, password } = req.body;
 
   const { error } = schema.validate({ firstName, lastName, email, password });
 
-  if (error) throw error;
+  if (error) return next(error);
 
-  // create user
+  const createdUser = await UserModel.create({
+    firstName,
+    lastName,
+    email,
+    password,
+  });
 
-  res.status(201).json({ id: 1, firstName, lastName, email });
+  res.status(201).json(createdUser);
 });
