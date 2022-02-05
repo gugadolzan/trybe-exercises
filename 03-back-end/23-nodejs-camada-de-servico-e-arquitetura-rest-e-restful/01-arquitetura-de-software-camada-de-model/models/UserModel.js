@@ -1,5 +1,13 @@
 const connection = require('./connection');
 
+const format = ({ id, first_name, last_name, email, password }) => ({
+  id,
+  firstName: first_name,
+  lastName: last_name,
+  email,
+  password,
+});
+
 const create = ({ firstName, lastName, email, password }) => {
   const query = `
     INSERT INTO users (first_name, last_name, email, password)
@@ -16,7 +24,7 @@ const getAll = () => {
     SELECT * FROM users
   `;
 
-  return connection.execute(query).then(([rows]) => rows);
+  return connection.execute(query).then(([rows]) => rows.map(format));
 };
 
 const findById = (id) => {
@@ -24,7 +32,7 @@ const findById = (id) => {
     SELECT * FROM users WHERE id = ?  
   `;
 
-  return connection.execute(query, [id]).then(([rows]) => rows[0]);
+  return connection.execute(query, [id]).then(([rows]) => rows.map(format)[0]);
 };
 
 module.exports = {
