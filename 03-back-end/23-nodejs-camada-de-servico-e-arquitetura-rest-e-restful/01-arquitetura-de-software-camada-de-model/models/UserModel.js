@@ -19,7 +19,16 @@ const getAll = () => {
   return connection.execute(query).then(([rows]) => rows);
 };
 
+const findById = (id) => {
+  const query = `
+    SELECT * FROM users WHERE id = ?  
+  `;
+
+  return connection.execute(query, [id]).then(([rows]) => rows[0]);
+};
+
 module.exports = {
   create,
   getAll,
+  findById,
 };

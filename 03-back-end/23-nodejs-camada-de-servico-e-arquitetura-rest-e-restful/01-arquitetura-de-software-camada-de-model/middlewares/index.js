@@ -1,9 +1,11 @@
 const createUser = require('./createUser');
-const getAllUser = require('./getAllUser');
 const error = require('./error');
+const getAllUser = require('./getAllUser');
+const findByIdUser = require('./findByIdUser');
 
 module.exports = {
   createUser,
-  getAllUser,
   error,
+  getAllUser,
+  findByIdUser,
 };
