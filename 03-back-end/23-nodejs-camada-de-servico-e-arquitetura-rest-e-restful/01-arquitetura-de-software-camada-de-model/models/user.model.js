@@ -35,8 +35,21 @@ const findById = (id) => {
   return connection.execute(query, [id]).then(([rows]) => rows.map(format)[0]);
 };
 
+const update = async (id, { firstName, lastName, email, password }) => {
+  const query = `
+    UPDATE users
+    SET first_name = ?, last_name = ?, email = ?, password = ?
+    WHERE id = ?
+  `;
+
+  await connection.execute(query, [firstName, lastName, email, password, id]);
+
+  return findById(id);
+};
+
 module.exports = {
   create,
   getAll,
   findById,
+  update,
 };
