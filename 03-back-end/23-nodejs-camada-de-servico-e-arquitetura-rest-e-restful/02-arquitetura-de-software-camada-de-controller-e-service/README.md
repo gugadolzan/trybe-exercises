@@ -4,8 +4,6 @@ Você vai desenvolver uma aplicação de busca de CEP, chamada `cep-lookup` . A 
 
 Utilize o banco de dados MySQL. Execute a seguinte query para criar o banco e a tabela:
 
-Copiar
-
 ```sql
 CREATE DATABASE IF NOT EXISTS cep_lookup;
 
@@ -28,8 +26,6 @@ Bons estudos!
 4.  Utilize o express para gerenciar os endpoints da sua aplicação
 5.  A aplicação deve ter a rota `GET /ping` , que retorna o status `200 OK` e o seguinte JSON:
 
-Copiar
-
 ```json
 { "message": "pong!" }
 ```
@@ -44,8 +40,6 @@ Copiar
 
 10. Caso o CEP seja inválido, retorne o status `400 Bad Request` e o seguinte JSON:
 
-Copiar
-
 ```json
 { "error": { "code": "invalidData", "message": "CEP inválido" } }
 ```
@@ -53,19 +47,13 @@ Copiar
 4.  Caso o CEP seja válido, realize uma busca no banco de dados.
     1.  Caso o CEP não exista no banco de dados, retorne o status `404 Not Found` e o seguinte JSON:
 
-Copiar
-
 ```json
 { "error": { "code": "notFound", "message": "CEP não encontrado" } }
 ```
 
-Copiar
-
 ```
   2. Caso o CEP exista, retorne o status `200 OK` e os dados do CEP no seguinte formato:
 ```
-
-Copiar
 
 ```json
 {
@@ -80,8 +68,6 @@ Copiar
 3.  Crie o endpoint `POST /cep`
 4.  O endpoint deve receber a seguinte estrutura no corpo da requisição:
 
-Copiar
-
 ```json
 {
   "cep": "01001-000",
@@ -95,8 +81,6 @@ Copiar
 2.  Todos os campos são obrigatórios
 3.  Utilize o Joi para realizar a validação. Em caso de erro, retorne o status `400 Bad Request` , com o seguinte JSON:
 
-Copiar
-
 ```json
 { "error": { "code": "invalidData", "message": "<mensagem do Joi>" } }
 ```
@@ -105,8 +89,6 @@ Copiar
     - **Dica** : Utilize o seguinte regex para validar o CEP: `\d{5}-\d{3}`
 5.  Se o CEP já existir, retorne o status `409 Conflict` com o seguinte JSON:
 
-Copiar
-
 ```json
 {
   "error": { "code": "alreadyExists", "message": "CEP já existente" }
@@ -114,8 +96,6 @@ Copiar
 ```
 
 6.  Se o CEP ainda não existir, armazene-o no banco de dados e retorne o status `201 Created` com os dados do novo CEP no seguinte formato:
-
-Copiar
 
 ```json
 {
@@ -126,3 +106,27 @@ Copiar
   "uf": "SP"
 }
 ```
+
+### Bônus
+
+1.  Utilize uma API externa para buscar CEPs que não existem no banco de dados
+2.  Quando um CEP não existir no banco de dados, utilize a API [https://viacep.com.br/ws/[numero-do-cep]/json/](https://viacep.com.br/ws/[numero-do-cep]/json/) para obter suas informações.
+3.  Caso o CEP não exista na API externa, você receberá o JSON `{ "erro": true }` . Nesse caso, retorne status `404 Not Found` com o seguinte JSON:
+
+```json
+{ "error": { "code": "notFound", "message": "CEP não encontrado" } }
+```
+
+3.  Caso o CEP exista na API externa, armazene-o no banco e devolva seus dados no seguinte formato:
+
+```json
+{
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP"
+}
+```
+
+**Dica** : Na arquitetura MSC, os models são responsáveis por **toda a comunicação externa** de uma aplicação, o que inclui APIs externas. Logo, você precisará de um model para acessar a API.

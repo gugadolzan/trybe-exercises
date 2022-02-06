@@ -25,8 +25,6 @@ Inicie os exercícios criando uma aplicação Node.js com os comandos já aprend
 
 - Crie um arquivo chamado `simpsons.json` e popule com os seguintes dados:
 
-Copiar
-
 ```json
 [
   {
@@ -108,8 +106,6 @@ Copiar
     3.  Caso todos os parâmetros estejam presentes, a rota deve gerar um token aleatório válido, e a resposta deve conter o status `200 - OK` , e o JSON `{ token: '<token-aleatorio>' }` .
 
 - Para gerar o token você pode utilizar a função `randomBytes` , do módulo `crypto` do Node, dessa forma:
-
-Copiar
 
 ```js
 const crypto = require('crypto');

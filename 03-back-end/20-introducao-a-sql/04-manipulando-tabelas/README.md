@@ -4,8 +4,6 @@ Os exercícios propostos possuem níveis variáveis de dificuldade. Tente fazer 
 
 > Para realizar os exercícios 1 a 7, restaure o banco de dados `Pixar` abaixo.
 
-Copiar
-
 ```sql
 DROP SCHEMA IF EXISTS Pixar;
 CREATE SCHEMA Pixar;

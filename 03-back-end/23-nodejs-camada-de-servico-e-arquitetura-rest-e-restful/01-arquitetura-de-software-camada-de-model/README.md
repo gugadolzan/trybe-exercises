@@ -9,8 +9,6 @@ Com isso em mente, prossiga para a realização dos exercícios:
 1.  Crie o _endpoint_ `POST /user`
 2.  Seu endpoint deve receber o seguinte conteúdo no body da request:
 
-Copiar
-
 ```json
 {
   "firstName": "Calebe",
@@ -24,8 +22,6 @@ Copiar
 2.  O campo `password` deve ser uma string de 6 ou mais caracteres;
 3.  Caso qualquer um dos campos seja inválido, retorne um JSON com o seguinte formato, variando a mensagem conforme o campo e o erro:
 
-Copiar
-
 ```json
 {
   "error": true,
@@ -34,8 +30,6 @@ Copiar
 ```
 
 1.  Caso o usuário seja criado com sucesso, retorne os campos `id` , `firstName` , `lastName` e `email` em JSON, no formato abaixo, com o status `201 Created` .
-
-Copiar
 
 ```json
 {
@@ -54,8 +48,6 @@ Copiar
 6.  O endpoint deve retornar o usuário cujo `id` seja igual ao parâmetro `id` informado na URL. O status deve ser `200 OK` .
 7.  Caso um usuário com o `id` informado não exista, o endpoint deve retornar o conteúdo abaixo em JSON, com status `404 Not Found` .
 
-Copiar
-
 ```json
 {
   "error": true,
@@ -65,8 +57,6 @@ Copiar
 
 1.  Crie o _endpoint_ `PUT /user/:id`
 2.  O endpoint deve receber, no body da request, os seguintes dados, em JSON:
-
-Copiar
 
 ```json
 {
@@ -79,8 +69,6 @@ Copiar
 
 1.  Caso qualquer um dos campos esteja faltando ou seja inválido, retorne um JSON com o seguinte formato, variando a mensagem conforme o campo e o erro:
 
-Copiar
-
 ```json
 {
   "error": true,
@@ -90,8 +78,6 @@ Copiar
 
 1.  Caso esteja tudo certo, utilize os dados enviados no corpo da requisição para atualizar o usuário cujo `id` foi especificado na URL.
 2.  Depois de alterar os dados do usuário no banco, retorne os novos dados com o status `200 OK` , no seguinte formato:
-
-Copiar
 
 ```json
 {
@@ -103,8 +89,6 @@ Copiar
 ```
 
 1.  Caso o usuário em questão não exista, retorne o status `404 Not Found` e os seguintes dados em JSON no corpo da resposta:
-
-Copiar
 
 ```json
 {
