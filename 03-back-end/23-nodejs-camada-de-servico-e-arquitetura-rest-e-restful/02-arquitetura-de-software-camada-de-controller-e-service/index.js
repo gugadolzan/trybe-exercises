@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.get('/ping', (_req, res) => res.status(200).json({ message: 'pong!' }));
 
 app.get('/cep/:cep', cepController.getCep);
+app.post('/cep', cepController.createCep);
 
 app.use((err, _req, res, _next) => {
   const status = err.status || 500;
