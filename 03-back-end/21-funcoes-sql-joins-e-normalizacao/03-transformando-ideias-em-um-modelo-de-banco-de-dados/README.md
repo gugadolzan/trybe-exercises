@@ -2,8 +2,6 @@
 
 **Exercício 1:** Um zoológico precisa de um banco de dados para armazenar informações sobre os seus animais. As informações a serem armazenadas sobre cada animal são:
 
-Copiar
-
 ```
 * Nome;
 

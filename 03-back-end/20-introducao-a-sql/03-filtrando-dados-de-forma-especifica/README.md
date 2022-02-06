@@ -2,8 +2,6 @@
 
 **Exercício 1** : Para realizar as tarefas do 1 ao 7, restaure o seguinte banco de dados:
 
-Copiar
-
 ```sql
 DROP SCHEMA IF EXISTS PecasFornecedores;
 CREATE SCHEMA PecasFornecedores;
@@ -81,8 +79,6 @@ INSERT INTO Vendas(fornecimento, quantity, order_date)
 ### Bônus
 
 **Exercício 3** : Usando o banco de dados `Scientists` restaurado no dia anterior, realize os exercícios a seguir. Caso ainda não tenha restaurado o banco, utilize o código abaixo para fazê-lo.
-
-Copiar
 
 ```sql
 DROP SCHEMA IF EXISTS Scientists;

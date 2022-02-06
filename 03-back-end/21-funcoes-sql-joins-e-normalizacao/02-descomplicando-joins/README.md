@@ -2,8 +2,6 @@
 
 Faça os exercícios 1 a 12 utilizando banco de dados `Pixar` abaixo:
 
-Copiar
-
 ```sql
 
 DROP SCHEMA IF EXISTS Pixar;
