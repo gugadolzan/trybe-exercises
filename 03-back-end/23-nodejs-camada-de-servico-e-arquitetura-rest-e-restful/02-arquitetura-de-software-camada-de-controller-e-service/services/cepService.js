@@ -7,26 +7,23 @@ const isValidCep = (cep) => {
   return re.test(cep);
 };
 
+const throwError = (message, status, code) => {
+  const err = new Error(message);
+  err.status = status;
+  err.code = code;
+  throw err;
+};
+
 const createCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
   const data = { cep, logradouro, bairro, localidade, uf };
 
   const { error } = cepSchema.validate(data);
 
-  if (error) {
-    const err = new Error(error.details[0].message);
-    err.status = 400;
-    err.code = 'invalidData';
-    throw err;
-  }
+  if (error) throwError(error.details[0].message, 400, 'invalidData');
 
   const cepData = await cepModel.getCep(cep);
 
-  if (cepData) {
-    const err = new Error('CEP já existente');
-    err.status = 409;
-    err.code = 'alreadyExists';
-    throw err;
-  }
+  if (cepData) throwError('CEP já existente', 409, 'alreadyExists');
 
   const newCep = await cepModel.createCep(data);
 
@@ -34,21 +31,11 @@ const createCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
 };
 
 const getCep = async (cep) => {
-  if (!isValidCep(cep)) {
-    const err = new Error('CEP inválido');
-    err.status = 400;
-    err.code = 'invalidData';
-    throw err;
-  }
+  if (!isValidCep(cep)) throwError('CEP inválido', 400, 'invalidData');
 
   const cepData = await cepModel.getCep(cep);
 
-  if (!cepData) {
-    const err = new Error('CEP não encontrado');
-    err.status = 404;
-    err.code = 'notFound';
-    throw err;
-  }
+  if (!cepData) throwError('CEP não encontrado', 404, 'notFound');
 
   return cepData;
 };
