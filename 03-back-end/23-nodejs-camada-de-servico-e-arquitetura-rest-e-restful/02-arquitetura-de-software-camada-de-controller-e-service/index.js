@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const errorHandler = require('./middlewares/error');
 const cepRouter = require('./routes/cepRouter');
 
 app = express();
@@ -13,22 +14,7 @@ app.get('/ping', (_req, res) => res.status(200).json({ message: 'pong!' }));
 
 app.use('/cep', cepRouter);
 
-app.use((err, _req, res, _next) => {
-  const status = err.status || 500;
-  const code = err.code || 'internalError';
-  const message = err.message || 'Internal server error';
-
-  if (status === 500) {
-    console.error(err);
-  }
-
-  res.status(status).json({
-    error: {
-      code,
-      message,
-    },
-  });
-});
+app.use(errorHandler);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
