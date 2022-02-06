@@ -1,10 +1,5 @@
 const cepModel = require('../models/cepModel');
-
-const isValidCep = (cep) => {
-  const re = /\d{5}-?\d{3}/;
-
-  return re.test(cep);
-};
+const ViaCep = require('../models/ViaCep');
 
 const createCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
   const cepData = await cepModel.getCep(cep);
@@ -30,18 +25,13 @@ const createCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
 };
 
 const getCep = async (cep) => {
-  if (!isValidCep(cep))
-    return {
-      error: {
-        message: 'CEP inválido',
-        status: 400,
-        code: 'invalidData',
-      },
-    };
+  let cepData = await cepModel.getCep(cep);
 
-  const cepData = await cepModel.getCep(cep);
+  if (cepData) return cepData;
 
-  if (!cepData)
+  cepData = await ViaCep.lookupCep(cep);
+
+  if (cepData.erro)
     return {
       error: {
         message: 'CEP não encontrado',
@@ -49,6 +39,8 @@ const getCep = async (cep) => {
         code: 'notFound',
       },
     };
+
+  await cepModel.createCep(cepData);
 
   return cepData;
 };
