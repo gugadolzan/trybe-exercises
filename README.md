@@ -200,7 +200,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [x] **01**: Introdução - Arquitetura de Software
 - [x] **01**: Arquitetura de Software - Camada de Model
 - [x] **02**: Arquitetura de Software - Camada de Controller e Service
-- [ ] **03**: Arquitetura Web - Rest e Restful
+- [x] **03**: Arquitetura Web - Rest e Restful
 - [ ] **04**: Arquitetura de Software - Testando as Camadas
 - [ ] **05**: Projeto - [Store Manager]()
 
