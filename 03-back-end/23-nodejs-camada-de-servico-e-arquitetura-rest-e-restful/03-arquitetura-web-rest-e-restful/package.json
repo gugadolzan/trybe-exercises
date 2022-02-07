@@ -1,7 +1,7 @@
 {
   "name": "03-arquitetura-web-rest-e-restful",
   "version": "1.0.0",
-  "description": "Esse exercício vai ser um pouco diferente. Vamos trabalhar com uma técnica de desenvolvimento de software chamada de **refactoring** .",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
