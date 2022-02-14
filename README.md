@@ -201,8 +201,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [x] **01**: Arquitetura de Software - Camada de Model
 - [x] **02**: Arquitetura de Software - Camada de Controller e Service
 - [x] **03**: Arquitetura Web - Rest e Restful
-- [ ] **04**: Arquitetura de Software - Testando as Camadas
-- [ ] **05**: Projeto - [Store Manager]()
+- [x] **04**: Arquitetura de Software - Testando as Camadas
+- [x] **05**: Projeto - [Store Manager](https://github.com/tryber/sd-014-a-store-manager/pull/94)
 
 #### Bloco 24: Node.js: ORM e Autenticação
 
