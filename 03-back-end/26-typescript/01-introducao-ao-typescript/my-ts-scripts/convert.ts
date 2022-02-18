@@ -1,18 +1,39 @@
-const convert = (value: number, fromUnit: string, toUnit: string): number => {
-  const conversionTable: { [key: string]: number } = {
-    k: 1000,
-    h: 100,
-    da: 10,
-    d: 0.1,
-    c: 0.01,
-    m: 0.001,
-  };
+import readline from "readline-sync";
 
-  const from: number = conversionTable[fromUnit.slice(0, -1)] || 1;
-  const to: number = conversionTable[toUnit.slice(0, -1)] || 1;
+import utils from "./utils";
 
-  const valueInBaseUnit: number = value * from;
-  const valueConverted: number = valueInBaseUnit / to;
+function main() {
+  const scripts: { [key: string]: string }[] = [
+    { name: "Length converter", unit: "m" },
+    { name: "Mass converter", unit: "g" },
+    { name: "Capacity converter", unit: "l" },
+    { name: "Area converter", unit: "m²" },
+    { name: "Volume converter", unit: "m³" },
+  ];
 
-  return valueConverted;
-};
+  const choice: number = readline.keyInSelect(
+    scripts.map(({ name }) => name),
+    "Choose a converter to run: \n"
+  );
+
+  if (choice === -1) return;
+
+  const units: string[] = ["k", "h", "da", "d", "c", "m"].map(
+    (unit) => unit + scripts[choice].unit
+  );
+  units.splice(3, 0, scripts[choice].unit);
+
+  const values: number[] = [1000, 100, 10, 1, 0.1, 0.01, 0.001];
+
+  const conversionTable: { [key: string]: number } = units.reduce(
+    (acc, unit, index) => ({
+      ...acc,
+      [unit]: values[index],
+    }),
+    {}
+  );
+
+  utils.exec(conversionTable);
+}
+
+main();
