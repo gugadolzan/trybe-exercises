@@ -221,7 +221,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 - [ ] **03**: Projeto - [Stranger Things]()
 
 #### Bloco 26: TypeScript
-- [ ] **01**: Introdução - TypeScript
+- [x] **01**: Introdução - TypeScript
 - [ ] **01**: Introdução ao TypeScript
 - [ ] **02**: Tipagem Estática e Generics
 - [ ] **03**: Express com TypeScript
