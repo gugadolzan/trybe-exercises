@@ -2,7 +2,7 @@ import readline from "readline-sync";
 
 import utils from "./utils";
 
-function main() {
+const main = (): void => {
   const scripts: { [key: string]: string }[] = [
     { name: "Length converter", unit: "m" },
     { name: "Mass converter", unit: "g" },
