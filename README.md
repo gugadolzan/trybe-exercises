@@ -223,7 +223,7 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 #### Bloco 26: TypeScript
 - [x] **01**: Introdução - TypeScript
 - [x] **01**: Introdução ao TypeScript
-- [ ] **02**: Tipagem Estática e Generics
+- [x] **02**: Tipagem Estática e Generics
 - [ ] **03**: Express com TypeScript
 - [ ] **04**: Projeto - [Trybe Smith]()
 
