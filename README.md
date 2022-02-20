@@ -206,8 +206,8 @@ This repository contains all the exercises developed by [Gustavo Dolzan](https:/
 
 #### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] **01**: Introdução - Node.js: ORM e Autenticação
-- [ ] **01**: ORM - Interface da aplicação com o banco de dados
+- [x] **01**: Introdução - Node.js: ORM e Autenticação
+- [x] **01**: ORM - Interface da aplicação com o banco de dados
 - [ ] **02**: ORM - Associations
 - [ ] **03**: JWT - (JSON Web Token)
 - [ ] **04**: Testando APIs com Testes de Integração
