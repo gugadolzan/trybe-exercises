@@ -1,31 +1,16 @@
-enum Color {
-  Black = "black",
-  White = "white",
-  Red = "red",
-  Silver = "silver",
-}
-
-enum Door {
-  FrontLeft = "front left",
-  FrontRight = "front right",
-  BackLeft = "back left",
-  BackRight = "back right",
-}
-
-enum Turn {
-  Left = "left",
-  Right = "right",
-}
+import Colors from "./Colors";
+import Doors from "./Doors";
+import Directions from "./Directions";
 
 class Car {
   brand: string;
-  color: Color;
+  color: Colors;
   doors: number;
   doorsOpen: {
-    [key in Door]: boolean;
+    [key in Doors]: boolean;
   };
 
-  constructor(brand: string, color: Color, doors: number) {
+  constructor(brand: string, color: Colors, doors: number) {
     this.brand = brand;
     this.color = color;
     this.doors = doors;
@@ -41,7 +26,7 @@ class Car {
     console.log("beep");
   }
 
-  openTheDoor(door: Door): void {
+  openTheDoor(door: Doors): void {
     if (this.doorsOpen[door]) {
       console.log(`the ${door} door is already open`);
       return;
@@ -50,7 +35,7 @@ class Car {
     this.doorsOpen[door] = true;
   }
 
-  closeTheDoor(door: Door): void {
+  closeTheDoor(door: Doors): void {
     if (!this.doorsOpen[door]) {
       console.log(`the ${door} door is already closed`);
       return;
@@ -79,7 +64,9 @@ class Car {
     console.log("stop");
   }
 
-  turn(turn: Turn): void {
+  turn(turn: Directions): void {
     console.log(`turning ${turn}`);
   }
 }
+
+export default Car;
