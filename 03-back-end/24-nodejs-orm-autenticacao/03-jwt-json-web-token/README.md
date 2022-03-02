@@ -1,9 +1,10 @@
 ### Agora, a prática
 
-Antes de começar, crie um novo projeto chamado `hello-jwt` utilizando o comando `npm init @tryber/backend hello-jwt` , aceitando as opções padrão.
+### Exercício 1
 
-1.  Crie um endpoint `POST /login`
-2.  O endpoint deve receber os seguintes dados no corpo da requisição:
+Crie um endpoint `POST /login`
+
+1.  O endpoint deve receber os seguintes dados no corpo da requisição:
 
 ```json
 {
@@ -26,13 +27,20 @@ Antes de começar, crie um novo projeto chamado `hello-jwt` utilizando o comando
 
 4.  Para que `username` seja válido, seu valor precisa ser uma string alfanumérica de, pelo menos, 5 caracteres.
 5.  Para que `password` seja válido, seu valor precisa ser uma string de, pelo menos, 5 caracteres.
-6.  Altere o endpoint `POST /login` :
-7.  Caso `username` seja `admin` e `password` seja `s3nh4S3gur4???` , a chave `admin` no payload do token gerado deve ter o valor `true`
-8.  Crie o endpoint `/GET /users/me`
-9.  O endpoint só pode ser acessado por pessoas autenticadas
-10. Para realizar a autenticação, a requisição deve conter o header `Authorization` , cujo valor deve ser um token válido
 
-11. Caso o token não exista, retorne o status `401 Unauthorized` , com o seguinte corpo da resposta:
+### Exercício 2
+
+Altere o endpoint `POST /login` :
+
+1.  Caso `username` seja `admin` e `password` seja `s3nh4S3gur4???` , a chave `admin` no payload do token gerado deve ter o valor `true`
+
+### Exercício 3
+
+Crie o endpoint `/GET /users/me`
+
+1.  O endpoint só pode ser acessado por pessoas autenticadas
+2.  Para realizar a autenticação, a requisição deve conter o header `Authorization` , cujo valor deve ser um token válido
+3.  Caso o token não exista, retorne o status `401 Unauthorized` , com o seguinte corpo da resposta:
 
 ```json
 {
@@ -62,10 +70,14 @@ Antes de começar, crie um novo projeto chamado `hello-jwt` utilizando o comando
 ```
 
 6.  Utilize um middleware exclusivo para a autenticação. Armazene-o no arquivo `middlewares/auth.js`
-7.  Crie o endpoint `/GET /top-secret`
-8.  O endpoint só pode ser acessado por pessoas autenticadas.
-9.  Apenas tokens contendo, no payload, a propriedade `admin` com o valor `true` têm autorização para acessar esse endpoint.
-10. Caso o token não exista, retorne o status `401 Unauthorized` , com o seguinte corpo da resposta:
+
+### Exercício 4
+
+Crie o endpoint `/GET /top-secret`
+
+1.  O endpoint só pode ser acessado por pessoas autenticadas.
+2.  Apenas tokens contendo, no payload, a propriedade `admin` com o valor `true` têm autorização para acessar esse endpoint.
+3.  Caso o token não exista, retorne o status `401 Unauthorized` , com o seguinte corpo da resposta:
 
 ```json
 {
@@ -107,13 +119,15 @@ Antes de começar, crie um novo projeto chamado `hello-jwt` utilizando o comando
 
 ### Bônus
 
+### Exercício 1
+
 1.  Crie o endpoint `POST /signup`
 2.  O endpoint deve aceitar o seguinte JSON no corpo da requisição:
 
 ```json
 {
   "username": "MariaCecília_Souza92",
-  "password": "%9!%e"c0c5w,q%%h9n3k"
+  "password": "%9!%ec0c5w,q%%h9n3k"
 }
 ```
 
@@ -138,6 +152,8 @@ Antes de começar, crie um novo projeto chamado `hello-jwt` utilizando o comando
   "token": "<token gerado aqui>"
 }
 ```
+
+### Exercício 2
 
 2.  Altere o endpoint de login
 3.  Antes de gerar o token, verifique se o nome de usuário e a senha informados existem no arquivo `users.json` ;
